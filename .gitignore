@@ -15,8 +15,8 @@ env/
 .env/
 
 # Jupyter
+# Jupyter checkpoints (not notebooks themselves)
 .ipynb_checkpoints/
-*.ipynb
 
 # IDE
 .vscode/
