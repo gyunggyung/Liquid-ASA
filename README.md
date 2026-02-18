@@ -82,6 +82,91 @@ Evaluated on a **1,600-sample benchmark** built from the [Alpaca](https://huggin
   Baseline: TRIGGERED ❌      →  ASA: no trigger ✅ (p=0.021, gate=-1)
 ```
 
+## Comparison with Paper Results
+
+Full cross-model comparison using exact numbers from the [ASA paper](https://arxiv.org/abs/2602.04935) (Tables 1–5).
+
+### Probe AUC: Intent Readability (Paper Table 1)
+
+| Model | Params | Layers | L* | AUC | Shuffle AUC |
+|-------|--------|--------|-----|-----|-------------|
+| Qwen2.5-0.5B | 0.5B | 24 | 18 | **0.9994** | 0.4982 |
+| Qwen2.5-1.5B | 1.5B | 28 | 18 | **0.9996** | 0.4966 |
+| Qwen2.5-8B | 8B | 32 | 18 | **0.9989** | 0.4975 |
+| **LFM2.5-1.2B (ours)** | **1.17B** | **16** | **12** | **0.8856** | — |
+
+> Paper models achieve near-perfect AUC (~0.999) on their dataset. Our LFM2.5 reaches 0.886 — lower, but realistic. This could be due to: (1) different data labeling methodology, (2) Alpaca keyword-heuristic labels vs paper's potentially cleaner labels, (3) fundamental architectural differences (hybrid LIV+GQA vs pure Transformer).
+
+### Cross-Domain Cosine Similarity (Paper Table 2)
+
+| | Code | Math | Search | Translation |
+|--|------|------|--------|-------------|
+| **Paper (Qwen2.5-1.5B)** |
+| Code | 1.00 | 0.17 | 0.37 | 0.42 |
+| Math | 0.17 | 1.00 | 0.29 | 0.11 |
+| Search | 0.37 | 0.29 | 1.00 | 0.03 |
+| Translation | 0.42 | 0.11 | 0.03 | 1.00 |
+| **LFM2.5 (ours)** |
+| Code | 1.00 | -0.01 | 0.37 | 0.02 |
+| Math | -0.01 | 1.00 | 0.30 | 0.26 |
+| Search | 0.37 | 0.30 | 1.00 | 0.11 |
+| Translation | 0.02 | 0.26 | 0.11 | 1.00 |
+
+> Both models show domain-specific geometry — directions are not random. Code↔Search similarity is 0.37 in both, suggesting a shared retrieval/execution subspace. LFM2.5 shows stronger Code↔Math orthogonality (-0.01 vs 0.17).
+
+### Main Results: All Models (Paper Tables 4–5)
+
+| Model | Method | Prec | Rec | **F1** | Acc | **FPR** |
+|-------|--------|------|-----|--------|-----|---------|
+| **Qwen2.5-1.5B** | Baseline | 0.4400 | 0.1146 | 0.1818 | 0.4844 | 0.1458 |
+| | Prompt (few-shot) | 0.4348 | 0.2083 | 0.2817 | — | 0.2708 |
+| | LoRA (rank-16) | 0.5600 | 0.5833 | 0.5714 | — | 0.4583 |
+| | Q-LoRA | 0.7328 | 0.3154 | 0.4696 | — | 0.1193 |
+| | **ASA α=4.0** | **0.8718** | **0.3542** | **0.5037** | **0.6510** | **0.0521** |
+| **LLaMA-8B** | Baseline | 0.8407 | 0.4378 | 0.5759 | 0.6779 | 0.0839 |
+| | Prompt-only | 0.8627 | 0.4988 | 0.6238 | 0.7159 | 0.0829 |
+| | **ASA (best)** | **0.9079** | **0.7188** | **0.8023** | **0.8229** | **0.0700** |
+| **LFM2.5-1.2B** | Baseline | 0.4959 | 0.5656 | 0.5285 | 0.4953 | 0.5750 |
+| (ours) | **ASA α=1.0** | **0.7591** | **0.5219** | **0.6185** | **0.6781** | **0.1656** |
+
+### Key Observations
+
+**1. Opposite baseline problems:**
+
+| Model | Baseline Problem | ASA Effect |
+|-------|-----------------|------------|
+| Qwen2.5-1.5B | **Under-triggers** (Recall=0.11) | Promotes triggers ↑ |
+| LLaMA-8B | Moderate (Recall=0.44) | Improves both P and R |
+| LFM2.5-1.2B | **Over-triggers** (FPR=0.58) | Suppresses false triggers ↓ |
+
+> Qwen barely calls tools at all (11% recall) — ASA pushes it to trigger more. LFM2.5 triggers on everything (58% FPR) — ASA suppresses the false ones. This shows **ASA works bidirectionally**: both promoting and suppressing, depending on the model's baseline behavior.
+
+**2. Relative improvements:**
+
+| Improvement | Qwen2.5-1.5B | LLaMA-8B | LFM2.5-1.2B |
+|-------------|-------------|----------|-------------|
+| ΔF1 (relative) | +177% | +39% | **+17%** |
+| ΔFPR (relative) | -64% | -17% | **-71%** |
+| ΔPrecision | +98% | +8% | **+53%** |
+
+> LFM2.5 shows the **strongest FPR reduction** (-71%) of all three models, but more modest F1 improvement (+17%). This is because its baseline F1 is already higher (0.53 vs Qwen's 0.18), leaving less headroom.
+
+**3. Post-trigger validity:**
+
+| Model | Format | Exec Prec | Args |
+|-------|--------|-----------|------|
+| Qwen2.5-1.5B (ASA) | 0.8800 | 0.6923 | 0.8700 |
+| LFM2.5-1.2B (ASA) | **0.0000** | **0.0000** | **0.0000** |
+
+> LFM2.5 outputs tool calls in bracket format `[func(args)]` instead of JSON, so the JSON validator reports 0. This is a **parser format mismatch**, not an ASA failure. Trigger-level metrics (P/R/F1/FPR) are valid and unaffected.
+
+### Caveats
+
+- **Data differences**: Paper likely used a more carefully curated dataset with clean labels. Our Alpaca keyword-heuristic labeling introduces noise, which limits probe performance (AUC 0.89 vs 0.999).
+- **Experimental methodology**: Paper's code is not fully open-sourced. Implementation details (exact filtering rules, system prompt format, tokenizer settings) may differ.
+- **Model architecture**: LFM2.5 is the first non-Transformer model tested with ASA. The hybrid LIV+GQA architecture processes information differently, and the optimal intervention point (L12 vs L18) reflects this.
+- **α sensitivity**: LFM2.5 is more sensitive to steering (α=1 vs paper's α=4), suggesting the hybrid architecture amplifies activation perturbations.
+
 ## How ASA Works
 
 ```mermaid
