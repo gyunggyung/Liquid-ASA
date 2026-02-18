@@ -1,0 +1,62 @@
+[
+  {
+    "name": "calculator",
+    "description": "Evaluate a mathematical expression and return the numeric result.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "expression": {
+          "type": "string",
+          "description": "The mathematical expression to evaluate, e.g. '2 + 3 * 4'"
+        }
+      },
+      "required": ["expression"]
+    }
+  },
+  {
+    "name": "python_interpreter",
+    "description": "Execute Python code and return the printed output or result.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Python source code to execute"
+        }
+      },
+      "required": ["code"]
+    }
+  },
+  {
+    "name": "web_search",
+    "description": "Search the web for up-to-date information and return relevant results.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query string"
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "translator",
+    "description": "Translate text from one language to another.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The text to translate"
+        },
+        "target_language": {
+          "type": "string",
+          "description": "The target language for translation, e.g. 'French', 'Korean'"
+        }
+      },
+      "required": ["text", "target_language"]
+    }
+  }
+]

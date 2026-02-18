@@ -1,0 +1,1922 @@
+[
+    {
+        "id": "tr_math_t01",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 847 plus 1253?"
+    },
+    {
+        "id": "tr_math_t02",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 12% of $3450."
+    },
+    {
+        "id": "tr_math_t03",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 95 degrees Fahrenheit to Celsius for me."
+    },
+    {
+        "id": "tr_math_t04",
+        "domain": "math",
+        "label": 1,
+        "instruction": "How much is 7.5% annual interest on a $12000 deposit after 2 years?"
+    },
+    {
+        "id": "tr_math_t05",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the cube root of 27000?"
+    },
+    {
+        "id": "tr_math_t06",
+        "domain": "math",
+        "label": 1,
+        "instruction": "A flight is 2850 km and the plane flies at 900 km/h. How long is the flight?"
+    },
+    {
+        "id": "tr_math_t07",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the total cost of 3 items priced $24.99, $17.50, and $42.75 with 8% tax."
+    },
+    {
+        "id": "tr_math_t08",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 20 factorial divided by 18 factorial?"
+    },
+    {
+        "id": "tr_math_t09",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 26.2 miles to kilometers."
+    },
+    {
+        "id": "tr_math_t10",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the area of a triangle with base 15 cm and height 9 cm."
+    },
+    {
+        "id": "tr_math_t11",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 4567 divided by 23?"
+    },
+    {
+        "id": "tr_math_t12",
+        "domain": "math",
+        "label": 1,
+        "instruction": "A jacket is $120 with a 25% discount plus 7% tax. What is the final price?"
+    },
+    {
+        "id": "tr_math_t13",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the distance between points (0,0) and (8,6)."
+    },
+    {
+        "id": "tr_math_t14",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 3 to the power of 12?"
+    },
+    {
+        "id": "tr_math_t15",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 220 centimeters to feet and inches."
+    },
+    {
+        "id": "tr_math_t16",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If I invest $500 monthly at 7% annual return, what do I have after 10 years?"
+    },
+    {
+        "id": "tr_math_t17",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the greatest common divisor of 144 and 60?"
+    },
+    {
+        "id": "tr_math_t18",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate a 20% tip on a $93.40 bill split 3 ways."
+    },
+    {
+        "id": "tr_math_t19",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the sum of the first 50 odd numbers?"
+    },
+    {
+        "id": "tr_math_t20",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 5280 feet to meters."
+    },
+    {
+        "id": "tr_math_t21",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the volume of a cone with radius 6 cm and height 12 cm."
+    },
+    {
+        "id": "tr_math_t22",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 10001 minus 7654?"
+    },
+    {
+        "id": "tr_math_t23",
+        "domain": "math",
+        "label": 1,
+        "instruction": "I make $42 per hour and work 37.5 hours a week. What is my weekly pay?"
+    },
+    {
+        "id": "tr_math_t24",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the perimeter of a regular hexagon with side length 7 cm."
+    },
+    {
+        "id": "tr_math_t25",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 62.5% of 480?"
+    },
+    {
+        "id": "tr_math_t26",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 343 kelvin to Celsius."
+    },
+    {
+        "id": "tr_math_t27",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the weighted average: Math 90 (weight 3), English 85 (weight 2), Science 95 (weight 4)."
+    },
+    {
+        "id": "tr_math_t28",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the least common multiple of 15, 20, and 25?"
+    },
+    {
+        "id": "tr_math_t29",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If electricity costs $0.12 per kWh and I use 850 kWh per month, what is my bill?"
+    },
+    {
+        "id": "tr_math_t30",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the length of an arc with radius 10 and central angle 60 degrees."
+    },
+    {
+        "id": "tr_math_t31",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 23 squared plus 17 squared?"
+    },
+    {
+        "id": "tr_math_t32",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 750 milliliters to cups."
+    },
+    {
+        "id": "tr_math_t33",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate compound interest on $8000 at 5.25% compounded monthly for 4 years."
+    },
+    {
+        "id": "tr_math_t34",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 22 divided by 7 to 10 decimal places?"
+    },
+    {
+        "id": "tr_math_t35",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Quadruple the recipe: 1.5 cups flour, 0.75 cups sugar, 3 eggs, 0.5 cups butter."
+    },
+    {
+        "id": "tr_math_t36",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the area of a trapezoid with parallel sides 8 cm and 14 cm and height 5 cm."
+    },
+    {
+        "id": "tr_math_t37",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 1111 times 1111?"
+    },
+    {
+        "id": "tr_math_t38",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 2.5 radians to degrees."
+    },
+    {
+        "id": "tr_math_t39",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the body fat percentage using the Navy method: neck 38cm, waist 85cm, height 175cm."
+    },
+    {
+        "id": "tr_math_t40",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the volume of a rectangular prism 12cm by 8cm by 5cm?"
+    },
+    {
+        "id": "tr_math_n01",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Mathematics has always been the foundation of scientific discovery."
+    },
+    {
+        "id": "tr_math_n02",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Explain the concept of limits in calculus."
+    },
+    {
+        "id": "tr_math_n03",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I think geometry is the most visual branch of mathematics."
+    },
+    {
+        "id": "tr_math_n04",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Who invented calculus, Newton or Leibniz?"
+    },
+    {
+        "id": "tr_math_n05",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why are prime numbers fundamental to modern encryption?"
+    },
+    {
+        "id": "tr_math_n06",
+        "domain": "math",
+        "label": 0,
+        "instruction": "My daughter is struggling with fractions in school."
+    },
+    {
+        "id": "tr_math_n07",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Describe the difference between permutations and combinations conceptually."
+    },
+    {
+        "id": "tr_math_n08",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why do we need negative numbers in mathematics?"
+    },
+    {
+        "id": "tr_math_n09",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How is linear algebra used in computer graphics?"
+    },
+    {
+        "id": "tr_math_n10",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I want to become a math teacher someday."
+    },
+    {
+        "id": "tr_math_n11",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about Ramanujan and his incredible mathematical intuition."
+    },
+    {
+        "id": "tr_math_n12",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the difference between discrete and continuous mathematics?"
+    },
+    {
+        "id": "tr_math_n13",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How does Bayesian probability differ from frequentist probability?"
+    },
+    {
+        "id": "tr_math_n14",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I enjoy solving crossword puzzles and logic games."
+    },
+    {
+        "id": "tr_math_n15",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Explain what a vector space is in linear algebra."
+    },
+    {
+        "id": "tr_math_n16",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why does the golden ratio appear in art and architecture?"
+    },
+    {
+        "id": "tr_math_n17",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the history of mathematical notation."
+    },
+    {
+        "id": "tr_math_n18",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What are the unsolved problems in mathematics called Millennium Prize Problems?"
+    },
+    {
+        "id": "tr_math_n19",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How did the concept of zero change mathematics?"
+    },
+    {
+        "id": "tr_math_n20",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is abstract algebra and group theory about?"
+    },
+    {
+        "id": "tr_math_n21",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I find probability and statistics really useful in daily life."
+    },
+    {
+        "id": "tr_math_n22",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Describe what manifolds are in differential geometry."
+    },
+    {
+        "id": "tr_math_n23",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How is category theory used in theoretical computer science?"
+    },
+    {
+        "id": "tr_math_n24",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the P vs NP problem and its significance."
+    },
+    {
+        "id": "tr_math_n25",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the history of mathematical competitions like the IMO?"
+    },
+    {
+        "id": "tr_math_n26",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How does Fourier analysis connect math to signal processing?"
+    },
+    {
+        "id": "tr_math_n27",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I was always told math is about patterns, not just numbers."
+    },
+    {
+        "id": "tr_math_n28",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Explain what eigenvalues and eigenvectors represent intuitively."
+    },
+    {
+        "id": "tr_math_n29",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the connection between graph theory and social networks?"
+    },
+    {
+        "id": "tr_math_n30",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How did Al-Khwarizmi contribute to the development of algebra?"
+    },
+    {
+        "id": "tr_math_n31",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about Godel's incompleteness theorems and their implications."
+    },
+    {
+        "id": "tr_math_n32",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I watch 3Blue1Brown videos to understand math visually."
+    },
+    {
+        "id": "tr_math_n33",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the significance of Cantor's diagonalization argument?"
+    },
+    {
+        "id": "tr_math_n34",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How do proof assistants like Lean help verify mathematical theorems?"
+    },
+    {
+        "id": "tr_math_n35",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the Fields Medal and its famous winners."
+    },
+    {
+        "id": "tr_math_n36",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How is number theory used in modern cryptography beyond RSA?"
+    },
+    {
+        "id": "tr_math_n37",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is knot theory and what are its applications?"
+    },
+    {
+        "id": "tr_math_n38",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How did Archimedes estimate the value of pi?"
+    },
+    {
+        "id": "tr_math_n39",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I believe everyone can learn math with the right approach."
+    },
+    {
+        "id": "tr_math_n40",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What resources do you recommend for learning advanced mathematics?"
+    },
+    {
+        "id": "tr_code_t01",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python code to compute the factorial of 15."
+    },
+    {
+        "id": "tr_code_t02",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find all even numbers in the range 1 to 50."
+    },
+    {
+        "id": "tr_code_t03",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Write a Python script to count how many times the letter e appears in a given paragraph."
+    },
+    {
+        "id": "tr_code_t04",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to generate a list of squares from 1 to 20."
+    },
+    {
+        "id": "tr_code_t05",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to check if 7919 is a prime number."
+    },
+    {
+        "id": "tr_code_t06",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find the longest word in the sentence The quick brown fox jumps over the lazy dog."
+    },
+    {
+        "id": "tr_code_t07",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to convert the string hello world to title case."
+    },
+    {
+        "id": "tr_code_t08",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to zip two lists [a, b, c] and [1, 2, 3] into pairs."
+    },
+    {
+        "id": "tr_code_t09",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to find the third smallest element in [45, 12, 78, 34, 23, 89, 5]."
+    },
+    {
+        "id": "tr_code_t10",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to generate a UUID version 4 string."
+    },
+    {
+        "id": "tr_code_t11",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to parse the date March 15, 2024 and calculate days until today."
+    },
+    {
+        "id": "tr_code_t12",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to recursively flatten the dictionary {a: {b: 1, c: {d: 2}}}."
+    },
+    {
+        "id": "tr_code_t13",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to compute the variance of [15, 22, 33, 18, 27, 41]."
+    },
+    {
+        "id": "tr_code_t14",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to remove all whitespace from the string hello world foo bar."
+    },
+    {
+        "id": "tr_code_t15",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to create a word count dictionary from a multi-line text."
+    },
+    {
+        "id": "tr_code_t16",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the symmetric difference of sets {1,2,3,4,5} and {4,5,6,7,8}."
+    },
+    {
+        "id": "tr_code_t17",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to group a list of names by their first letter."
+    },
+    {
+        "id": "tr_code_t18",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to check if 153 is a narcissistic number."
+    },
+    {
+        "id": "tr_code_t19",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to implement a simple queue using two stacks."
+    },
+    {
+        "id": "tr_code_t20",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the determinant of the matrix [[3,8],[4,6]]."
+    },
+    {
+        "id": "tr_code_t21",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to generate the first 15 terms of the tribonacci sequence."
+    },
+    {
+        "id": "tr_code_t22",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find all substrings of length 3 in the string abcdef."
+    },
+    {
+        "id": "tr_code_t23",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to encode the string Machine Learning in base64."
+    },
+    {
+        "id": "tr_code_t24",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to implement a simple linked list and display its contents."
+    },
+    {
+        "id": "tr_code_t25",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to find the longest increasing subsequence of [10,9,2,5,3,7,101,18]."
+    },
+    {
+        "id": "tr_code_t26",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to rotate the matrix [[1,2,3],[4,5,6],[7,8,9]] 90 degrees clockwise."
+    },
+    {
+        "id": "tr_code_t27",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to extract all URLs from a given text using regex."
+    },
+    {
+        "id": "tr_code_t28",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the cross product of vectors [1,2,3] and [4,5,6]."
+    },
+    {
+        "id": "tr_code_t29",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to convert the hexadecimal value FF to decimal."
+    },
+    {
+        "id": "tr_code_t30",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to create a simple Markov chain from a list of words."
+    },
+    {
+        "id": "tr_code_t31",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to implement selection sort on [29, 10, 14, 37, 13]."
+    },
+    {
+        "id": "tr_code_t32",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find the LCM of 12, 15, and 20."
+    },
+    {
+        "id": "tr_code_t33",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to read a CSV string and convert it to a list of dictionaries."
+    },
+    {
+        "id": "tr_code_t34",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute all combinations of [A, B, C, D] taken 2 at a time."
+    },
+    {
+        "id": "tr_code_t35",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to calculate cosine similarity between [1,0,1] and [0,1,1]."
+    },
+    {
+        "id": "tr_code_t36",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to check if the string aabb is an anagram of baba."
+    },
+    {
+        "id": "tr_code_t37",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to find the kth largest element in [3,2,1,5,6,4] where k=2."
+    },
+    {
+        "id": "tr_code_t38",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to implement ROT13 encryption on the text Hello World."
+    },
+    {
+        "id": "tr_code_t39",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to compute the moving average of [1,2,3,4,5,6,7,8,9,10] with window 3."
+    },
+    {
+        "id": "tr_code_t40",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the Collatz sequence starting from n=27."
+    },
+    {
+        "id": "tr_code_n01",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are the advantages of using TypeScript over JavaScript?"
+    },
+    {
+        "id": "tr_code_n02",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the publish-subscribe design pattern."
+    },
+    {
+        "id": "tr_code_n03",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between a stack and a queue conceptually?"
+    },
+    {
+        "id": "tr_code_n04",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does the Linux kernel manage processes?"
+    },
+    {
+        "id": "tr_code_n05",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about the evolution of the Rust programming language."
+    },
+    {
+        "id": "tr_code_n06",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is memoization and how does it improve performance?"
+    },
+    {
+        "id": "tr_code_n07",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of dependency injection in software design."
+    },
+    {
+        "id": "tr_code_n08",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the observer pattern used for in event-driven systems?"
+    },
+    {
+        "id": "tr_code_n09",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does continuous delivery differ from continuous deployment?"
+    },
+    {
+        "id": "tr_code_n10",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between dynamic and static typing?"
+    },
+    {
+        "id": "tr_code_n11",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain what monads are in functional programming."
+    },
+    {
+        "id": "tr_code_n12",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What does amortized time complexity mean for push operations?"
+    },
+    {
+        "id": "tr_code_n13",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do indexes improve database query performance?"
+    },
+    {
+        "id": "tr_code_n14",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the repository pattern in domain-driven design?"
+    },
+    {
+        "id": "tr_code_n15",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe what Kubernetes does for container orchestration."
+    },
+    {
+        "id": "tr_code_n16",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the CAP theorem in distributed systems?"
+    },
+    {
+        "id": "tr_code_n17",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain behavior-driven development and how it relates to TDD."
+    },
+    {
+        "id": "tr_code_n18",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are the benefits of serverless architectures for startups?"
+    },
+    {
+        "id": "tr_code_n19",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does the JVM garbage collector decide what to collect?"
+    },
+    {
+        "id": "tr_code_n20",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of immutability in functional programming."
+    },
+    {
+        "id": "tr_code_n21",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is GraphQL and how does it compare to REST?"
+    },
+    {
+        "id": "tr_code_n22",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe the concept of eventual consistency in distributed databases."
+    },
+    {
+        "id": "tr_code_n23",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is a B-tree and where is it commonly used?"
+    },
+    {
+        "id": "tr_code_n24",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do message queues like RabbitMQ help in system architecture?"
+    },
+    {
+        "id": "tr_code_n25",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of race conditions in concurrent programming."
+    },
+    {
+        "id": "tr_code_n26",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are higher-order functions in functional programming?"
+    },
+    {
+        "id": "tr_code_n27",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe the concept of clean architecture by Robert C. Martin."
+    },
+    {
+        "id": "tr_code_n28",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between authentication and authorization?"
+    },
+    {
+        "id": "tr_code_n29",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do load balancers distribute traffic across multiple servers?"
+    },
+    {
+        "id": "tr_code_n30",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is technical debt and how should teams manage it?"
+    },
+    {
+        "id": "tr_code_n31",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain how red-black trees maintain balance after insertions."
+    },
+    {
+        "id": "tr_code_n32",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is edge computing and how does it differ from cloud computing?"
+    },
+    {
+        "id": "tr_code_n33",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe the circuit breaker pattern in microservices."
+    },
+    {
+        "id": "tr_code_n34",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the CQRS pattern and when should it be used?"
+    },
+    {
+        "id": "tr_code_n35",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the differences between TCP and UDP protocols."
+    },
+    {
+        "id": "tr_code_n36",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is WebAssembly and what problems does it solve?"
+    },
+    {
+        "id": "tr_code_n37",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe how OAuth 2.0 authorization flow works."
+    },
+    {
+        "id": "tr_code_n38",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between horizontal and vertical scaling?"
+    },
+    {
+        "id": "tr_code_n39",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of idempotency in API design."
+    },
+    {
+        "id": "tr_code_n40",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are the trade-offs between SQL joins and denormalized data?"
+    },
+    {
+        "id": "tr_search_t01",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest Tesla stock price and today's trading volume."
+    },
+    {
+        "id": "tr_search_t02",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for award-winning documentary films released in 2024."
+    },
+    {
+        "id": "tr_search_t03",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the real-time score for the NBA game tonight."
+    },
+    {
+        "id": "tr_search_t04",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the best-rated sushi restaurants in San Francisco."
+    },
+    {
+        "id": "tr_search_t05",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest UN climate summit resolutions."
+    },
+    {
+        "id": "tr_search_t06",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find newly published papers on large language models this week."
+    },
+    {
+        "id": "tr_search_t07",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the current Bitcoin price in USD."
+    },
+    {
+        "id": "tr_search_t08",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find user reviews for the iPhone 16 Pro camera quality."
+    },
+    {
+        "id": "tr_search_t09",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for cheap direct flights from Seoul to Tokyo."
+    },
+    {
+        "id": "tr_search_t10",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up whether it will rain in London tomorrow."
+    },
+    {
+        "id": "tr_search_t11",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest breakthroughs in quantum computing research."
+    },
+    {
+        "id": "tr_search_t12",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for music festivals happening in Europe this summer."
+    },
+    {
+        "id": "tr_search_t13",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the calorie count of a Starbucks Caramel Frappuccino."
+    },
+    {
+        "id": "tr_search_t14",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find budget-friendly hostels in Prague Czech Republic."
+    },
+    {
+        "id": "tr_search_t15",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for current wildfire alerts in California."
+    },
+    {
+        "id": "tr_search_t16",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the GDP of South Korea for 2024."
+    },
+    {
+        "id": "tr_search_t17",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find free alternatives to Microsoft Office for Mac."
+    },
+    {
+        "id": "tr_search_t18",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the Ethereum gas fees right now."
+    },
+    {
+        "id": "tr_search_t19",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up Shinkansen bullet train tickets from Tokyo to Osaka."
+    },
+    {
+        "id": "tr_search_t20",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the current retail price of the PlayStation 5 in the US."
+    },
+    {
+        "id": "tr_search_t21",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for weekend coding bootcamps in New York City."
+    },
+    {
+        "id": "tr_search_t22",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the final standings of the UEFA Euro 2024 tournament."
+    },
+    {
+        "id": "tr_search_t23",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find family-friendly campgrounds near Yosemite National Park."
+    },
+    {
+        "id": "tr_search_t24",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for highly rated podcast episodes about startup investing."
+    },
+    {
+        "id": "tr_search_t25",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up how to make authentic Thai green curry with a recipe."
+    },
+    {
+        "id": "tr_search_t26",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the nearest 24-hour pharmacy in Manhattan."
+    },
+    {
+        "id": "tr_search_t27",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest NASA Artemis mission updates."
+    },
+    {
+        "id": "tr_search_t28",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up passport renewal processing times for US citizens."
+    },
+    {
+        "id": "tr_search_t29",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find bestselling nonfiction books on the New York Times list."
+    },
+    {
+        "id": "tr_search_t30",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the current PM2.5 air pollution level in Seoul."
+    },
+    {
+        "id": "tr_search_t31",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up remote data analyst job postings on LinkedIn."
+    },
+    {
+        "id": "tr_search_t32",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest James Webb Space Telescope discoveries."
+    },
+    {
+        "id": "tr_search_t33",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for coworking spaces with day passes in Austin Texas."
+    },
+    {
+        "id": "tr_search_t34",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the average rent for a one-bedroom apartment in Denver."
+    },
+    {
+        "id": "tr_search_t35",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find showtimes for the latest Pixar movie in theaters near me."
+    },
+    {
+        "id": "tr_search_t36",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest WHO pandemic preparedness guidelines."
+    },
+    {
+        "id": "tr_search_t37",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the latest iOS software update release notes."
+    },
+    {
+        "id": "tr_search_t38",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find free online certification courses for cloud computing."
+    },
+    {
+        "id": "tr_search_t39",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the best dog-friendly parks in Portland Oregon."
+    },
+    {
+        "id": "tr_search_t40",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up today's foreign exchange rate for Japanese Yen to US Dollar."
+    },
+    {
+        "id": "tr_search_n01",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Explain the process of osmosis in biological cells."
+    },
+    {
+        "id": "tr_search_n02",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the Doppler effect and where do we observe it?"
+    },
+    {
+        "id": "tr_search_n03",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about plate tectonics and continental drift."
+    },
+    {
+        "id": "tr_search_n04",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How did the French Revolution change European politics?"
+    },
+    {
+        "id": "tr_search_n05",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is existentialism as a philosophical movement?"
+    },
+    {
+        "id": "tr_search_n06",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the human respiratory system exchange gases?"
+    },
+    {
+        "id": "tr_search_n07",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the core principles of socialism versus capitalism?"
+    },
+    {
+        "id": "tr_search_n08",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do antibiotics work to fight bacterial infections?"
+    },
+    {
+        "id": "tr_search_n09",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is antimatter and has it ever been observed?"
+    },
+    {
+        "id": "tr_search_n10",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Describe the major artistic movements of the 20th century."
+    },
+    {
+        "id": "tr_search_n11",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is Bernoulli's principle in fluid dynamics?"
+    },
+    {
+        "id": "tr_search_n12",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about Stoic philosophy and its modern relevance."
+    },
+    {
+        "id": "tr_search_n13",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does DNS resolution work when you type a URL?"
+    },
+    {
+        "id": "tr_search_n14",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What causes tides on Earth and how are they predicted?"
+    },
+    {
+        "id": "tr_search_n15",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Who were the Impressionist painters and what defined the movement?"
+    },
+    {
+        "id": "tr_search_n16",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the endocrine system regulate hormones in the body?"
+    },
+    {
+        "id": "tr_search_n17",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the difference between special and general relativity?"
+    },
+    {
+        "id": "tr_search_n18",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Describe the nitrogen cycle in ecosystems."
+    },
+    {
+        "id": "tr_search_n19",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What was the Treaty of Versailles and its consequences?"
+    },
+    {
+        "id": "tr_search_n20",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does a market economy allocate resources?"
+    },
+    {
+        "id": "tr_search_n21",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Explain the concept of natural selection in evolution."
+    },
+    {
+        "id": "tr_search_n22",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are neutron stars and how dense are they?"
+    },
+    {
+        "id": "tr_search_n23",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does CRISPR gene editing technology work at a molecular level?"
+    },
+    {
+        "id": "tr_search_n24",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the difference between fog and clouds?"
+    },
+    {
+        "id": "tr_search_n25",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Describe the Viking Age and Norse exploration."
+    },
+    {
+        "id": "tr_search_n26",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do capacitors store and release electrical energy?"
+    },
+    {
+        "id": "tr_search_n27",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What were the main causes of the American Civil War?"
+    },
+    {
+        "id": "tr_search_n28",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does a parliamentary system of government function?"
+    },
+    {
+        "id": "tr_search_n29",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is string theory in theoretical physics?"
+    },
+    {
+        "id": "tr_search_n30",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about how the human eye perceives color."
+    },
+    {
+        "id": "tr_search_n31",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do radio telescopes differ from optical telescopes?"
+    },
+    {
+        "id": "tr_search_n32",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the philosophical arguments for and against free will?"
+    },
+    {
+        "id": "tr_search_n33",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Explain the concept of comparative advantage in trade theory."
+    },
+    {
+        "id": "tr_search_n34",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is epigenetics and how does it modify gene expression?"
+    },
+    {
+        "id": "tr_search_n35",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Silk Road and its role in connecting civilizations."
+    },
+    {
+        "id": "tr_search_n36",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do coral reefs form and why are they important?"
+    },
+    {
+        "id": "tr_search_n37",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is utilitarianism as an ethical framework?"
+    },
+    {
+        "id": "tr_search_n38",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does nuclear fusion produce energy in stars?"
+    },
+    {
+        "id": "tr_search_n39",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the scientific method and its key steps?"
+    },
+    {
+        "id": "tr_search_n40",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Aztec civilization and its achievements."
+    },
+    {
+        "id": "tr_trans_t01",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Have a wonderful day ahead' to Korean."
+    },
+    {
+        "id": "tr_trans_t02",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '明日の天気はどうですか' from Japanese to English."
+    },
+    {
+        "id": "tr_trans_t03",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I enjoy reading books in the evening' to German."
+    },
+    {
+        "id": "tr_trans_t04",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Wir gehen morgen ins Kino' from German to English."
+    },
+    {
+        "id": "tr_trans_t05",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Excuse me, where is the bus stop?' to Mandarin Chinese."
+    },
+    {
+        "id": "tr_trans_t06",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '컴퓨터 과학은 미래에 더 중요해질 것입니다' from Korean to English."
+    },
+    {
+        "id": "tr_trans_t07",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I would like to check in to my hotel room' to French."
+    },
+    {
+        "id": "tr_trans_t08",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'El conocimiento es poder' from Spanish to English."
+    },
+    {
+        "id": "tr_trans_t09",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'This pasta dish is absolutely delicious' to Italian."
+    },
+    {
+        "id": "tr_trans_t10",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Je suis très content de vous rencontrer' from French to English."
+    },
+    {
+        "id": "tr_trans_t11",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Learning new languages broadens your perspective' to Spanish."
+    },
+    {
+        "id": "tr_trans_t12",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '我对人工智能的发展很感兴趣' from Chinese to English."
+    },
+    {
+        "id": "tr_trans_t13",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The train departs from platform 3' to Japanese."
+    },
+    {
+        "id": "tr_trans_t14",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Добро пожаловать в наш университет' from Russian to English."
+    },
+    {
+        "id": "tr_trans_t15",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'My favorite season is autumn' to Korean."
+    },
+    {
+        "id": "tr_trans_t16",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'A educação é a chave para o futuro' from Portuguese to English."
+    },
+    {
+        "id": "tr_trans_t17",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please send me the report by end of day' to Chinese."
+    },
+    {
+        "id": "tr_trans_t18",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'الذكاء الاصطناعي يغير العالم' from Arabic to English."
+    },
+    {
+        "id": "tr_trans_t19",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The library is open from 9 AM to 8 PM' to French."
+    },
+    {
+        "id": "tr_trans_t20",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '新しい技術を学ぶことは大切です' from Japanese to English."
+    },
+    {
+        "id": "tr_trans_t21",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'We need to reschedule the appointment' to Arabic."
+    },
+    {
+        "id": "tr_trans_t22",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Il tempo vola quando ti diverti' from Italian to English."
+    },
+    {
+        "id": "tr_trans_t23",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The wifi password is on the back of the router' to Spanish."
+    },
+    {
+        "id": "tr_trans_t24",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '이 프로젝트의 마감일은 다음 주 금요일입니다' from Korean to English."
+    },
+    {
+        "id": "tr_trans_t25",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please do not disturb during the meeting' to German."
+    },
+    {
+        "id": "tr_trans_t26",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Программирование — это искусство' from Russian to English."
+    },
+    {
+        "id": "tr_trans_t27",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'May I have the check please?' to Japanese."
+    },
+    {
+        "id": "tr_trans_t28",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Los datos son el nuevo petróleo' from Spanish to English."
+    },
+    {
+        "id": "tr_trans_t29",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The emergency exit is to your left' to Chinese."
+    },
+    {
+        "id": "tr_trans_t30",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '数据科学是一个快速发展的领域' from Chinese to English."
+    },
+    {
+        "id": "tr_trans_t31",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Your order has been shipped and is on its way' to Korean."
+    },
+    {
+        "id": "tr_trans_t32",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Das Wetter wird morgen besser sein' from German to English."
+    },
+    {
+        "id": "tr_trans_t33",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Would you like some water or juice?' to Italian."
+    },
+    {
+        "id": "tr_trans_t34",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Non vedo l'ora di iniziare il nuovo progetto' from Italian to English."
+    },
+    {
+        "id": "tr_trans_t35",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The batteries in the remote control are dead' to French."
+    },
+    {
+        "id": "tr_trans_t36",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Время — деньги' from Russian to English."
+    },
+    {
+        "id": "tr_trans_t37",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'We will be arriving at the station in ten minutes' to Arabic."
+    },
+    {
+        "id": "tr_trans_t38",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Conhecimento é a maior riqueza' from Portuguese to English."
+    },
+    {
+        "id": "tr_trans_t39",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The software update is now available for download' to Japanese."
+    },
+    {
+        "id": "tr_trans_t40",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '인공지능이 의료 분야를 혁신하고 있습니다' from Korean to English."
+    },
+    {
+        "id": "tr_trans_n01",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How many languages are spoken on the African continent?"
+    },
+    {
+        "id": "tr_trans_n02",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What makes Finnish such a unique European language?"
+    },
+    {
+        "id": "tr_trans_n03",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the origins of the Cyrillic alphabet."
+    },
+    {
+        "id": "tr_trans_n04",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Why is Sanskrit considered the mother of many Indian languages?"
+    },
+    {
+        "id": "tr_trans_n05",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do polyglots manage to learn so many languages?"
+    },
+    {
+        "id": "tr_trans_n06",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the International Phonetic Alphabet used for?"
+    },
+    {
+        "id": "tr_trans_n07",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the history of simultaneous interpretation at the UN."
+    },
+    {
+        "id": "tr_trans_n08",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does immersion help in acquiring a second language?"
+    },
+    {
+        "id": "tr_trans_n09",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are false friends between English and German?"
+    },
+    {
+        "id": "tr_trans_n10",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How did Norman French influence Middle English vocabulary?"
+    },
+    {
+        "id": "tr_trans_n11",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is diglossia and in which countries does it occur?"
+    },
+    {
+        "id": "tr_trans_n12",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Basque language and why linguists find it fascinating."
+    },
+    {
+        "id": "tr_trans_n13",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does the Chinese writing system differ from alphabetic systems?"
+    },
+    {
+        "id": "tr_trans_n14",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What impact has social media had on language change?"
+    },
+    {
+        "id": "tr_trans_n15",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do click consonants work in Khoisan languages?"
+    },
+    {
+        "id": "tr_trans_n16",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about Persian poetry and its influence on literature."
+    },
+    {
+        "id": "tr_trans_n17",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Which language has the most words in its vocabulary?"
+    },
+    {
+        "id": "tr_trans_n18",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do Austronesian languages spread across the Pacific Islands?"
+    },
+    {
+        "id": "tr_trans_n19",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the critical period hypothesis for language acquisition?"
+    },
+    {
+        "id": "tr_trans_n20",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about how Australian and British English diverged."
+    },
+    {
+        "id": "tr_trans_n21",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does bilingual education impact student achievement?"
+    },
+    {
+        "id": "tr_trans_n22",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the role of context in disambiguating meaning in language?"
+    },
+    {
+        "id": "tr_trans_n23",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about morphologically rich languages like Turkish and Hungarian."
+    },
+    {
+        "id": "tr_trans_n24",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How did the printing press standardize European languages?"
+    },
+    {
+        "id": "tr_trans_n25",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the challenges of preserving indigenous languages?"
+    },
+    {
+        "id": "tr_trans_n26",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about language revitalization efforts for Hebrew and Welsh."
+    },
+    {
+        "id": "tr_trans_n27",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does the Vietnamese writing system use Latin letters?"
+    },
+    {
+        "id": "tr_trans_n28",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are honorifics and how are they used in Korean and Japanese?"
+    },
+    {
+        "id": "tr_trans_n29",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do pidgin languages evolve into fully developed creoles?"
+    },
+    {
+        "id": "tr_trans_n30",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the limitations of current machine translation systems?"
+    },
+    {
+        "id": "tr_trans_n31",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about Sumerian cuneiform as one of the earliest writing systems."
+    },
+    {
+        "id": "tr_trans_n32",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does language attrition affect heritage speakers?"
+    },
+    {
+        "id": "tr_trans_n33",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is universal grammar according to Chomsky?"
+    },
+    {
+        "id": "tr_trans_n34",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Swahili language and its role in East Africa."
+    },
+    {
+        "id": "tr_trans_n35",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do writing systems evolve from pictographic to alphabetic?"
+    },
+    {
+        "id": "tr_trans_n36",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the difference between agglutinative and fusional languages?"
+    },
+    {
+        "id": "tr_trans_n37",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about constructed languages in fiction like Klingon and Elvish."
+    },
+    {
+        "id": "tr_trans_n38",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do tone systems work differently in Thai versus Mandarin?"
+    },
+    {
+        "id": "tr_trans_n39",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the Ethnologue database and how does it classify languages?"
+    },
+    {
+        "id": "tr_trans_n40",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about efforts to document and digitize endangered languages."
+    }
+]

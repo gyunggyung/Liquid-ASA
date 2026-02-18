@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Outputs & checkpoints
+outputs/
+checkpoints/
+*.pkl
+*.npz
+*.pt
+*.bin
+
+# HuggingFace cache
+.cache/
+
+# Logs
+*.log
+wandb/
+
+# Secrets
+.env
+*.key
+token.txt
+
+# Gemini
+Gemini.txt
+ASA_LFM2.5_Implementation_Plan.md
+Agent.md

@@ -1,0 +1,1922 @@
+[
+    {
+        "id": "te_math_t01",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 8.5% annual return on a $15000 investment over 7 years compounded annually."
+    },
+    {
+        "id": "te_math_t02",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 2048 divided by 64?"
+    },
+    {
+        "id": "te_math_t03",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 310 kelvin to Fahrenheit."
+    },
+    {
+        "id": "te_math_t04",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the cost per ounce if a 32 oz bottle costs $4.79."
+    },
+    {
+        "id": "te_math_t05",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Find the area of an ellipse with semi-major axis 8 and semi-minor axis 5."
+    },
+    {
+        "id": "te_math_t06",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If a plane travels 550 mph for 4 hours and 15 minutes, how far does it go?"
+    },
+    {
+        "id": "te_math_t07",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the total paycheck: 40 hrs at $22/hr plus 8 hrs overtime at 1.5x rate."
+    },
+    {
+        "id": "te_math_t08",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 12 factorial?"
+    },
+    {
+        "id": "te_math_t09",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 88 kilometers per hour to miles per hour."
+    },
+    {
+        "id": "te_math_t10",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the surface area of a cube with side length 9 cm?"
+    },
+    {
+        "id": "te_math_t11",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 3333 plus 4444 plus 5555."
+    },
+    {
+        "id": "te_math_t12",
+        "domain": "math",
+        "label": 1,
+        "instruction": "A house was $350000 and appreciated 4% per year for 5 years. What is it worth now?"
+    },
+    {
+        "id": "te_math_t13",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the midpoint between coordinates (3,7) and (11,15)?"
+    },
+    {
+        "id": "te_math_t14",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 5 to the power of 7."
+    },
+    {
+        "id": "te_math_t15",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 4500 square feet to square meters."
+    },
+    {
+        "id": "te_math_t16",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the present value of $10000 received 5 years from now at 8% discount rate?"
+    },
+    {
+        "id": "te_math_t17",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Find the GCD of 270 and 192."
+    },
+    {
+        "id": "te_math_t18",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Split a $247.80 restaurant bill equally among 6 people, each with 20% tip."
+    },
+    {
+        "id": "te_math_t19",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the harmonic mean of 10, 20, and 40?"
+    },
+    {
+        "id": "te_math_t20",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 1.5 atmospheres to pascals."
+    },
+    {
+        "id": "te_math_t21",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the lateral surface area of a cone with radius 5 and slant height 13."
+    },
+    {
+        "id": "te_math_t22",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the percentage change from 85 to 102?"
+    },
+    {
+        "id": "te_math_t23",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If I save $175 per week for 52 weeks, how much will I have?"
+    },
+    {
+        "id": "te_math_t24",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the determinant of the 2x2 matrix [[3,5],[2,4]]."
+    },
+    {
+        "id": "te_math_t25",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 37.5% expressed as a fraction in simplest form?"
+    },
+    {
+        "id": "te_math_t26",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert a speed of 60 knots to kilometers per hour."
+    },
+    {
+        "id": "te_math_t27",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the z-score for a value of 78 given mean 70 and standard deviation 5."
+    },
+    {
+        "id": "te_math_t28",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the LCM of 28, 42, and 63?"
+    },
+    {
+        "id": "te_math_t29",
+        "domain": "math",
+        "label": 1,
+        "instruction": "A pool holds 20000 gallons and fills at 15 gallons per minute. How long to fill?"
+    },
+    {
+        "id": "te_math_t30",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the interior angle of a regular decagon."
+    },
+    {
+        "id": "te_math_t31",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the natural logarithm of 100?"
+    },
+    {
+        "id": "te_math_t32",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 200 cubic centimeters to liters."
+    },
+    {
+        "id": "te_math_t33",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate continuous compounding: principal $5000, rate 4%, time 10 years."
+    },
+    {
+        "id": "te_math_t34",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the cosine of 30 degrees?"
+    },
+    {
+        "id": "te_math_t35",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If 3 painters paint a house in 12 hours, how long would 4 painters take?"
+    },
+    {
+        "id": "te_math_t36",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the area of a regular pentagon with side length 6 cm."
+    },
+    {
+        "id": "te_math_t37",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 789 squared?"
+    },
+    {
+        "id": "te_math_t38",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 1013 millibars to inches of mercury."
+    },
+    {
+        "id": "te_math_t39",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the weighted GPA: A(4.0) in 3 credits, B(3.0) in 4 credits, A-(3.7) in 3 credits."
+    },
+    {
+        "id": "te_math_t40",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the volume of a hemisphere with radius 7 cm?"
+    },
+    {
+        "id": "te_math_n01",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the Seven Bridges of Konigsberg problem and graph theory."
+    },
+    {
+        "id": "te_math_n02",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I want to learn more about topology, where should I start?"
+    },
+    {
+        "id": "te_math_n03",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How did Ada Lovelace contribute to mathematics and computing?"
+    },
+    {
+        "id": "te_math_n04",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the connection between number theory and cryptographic security?"
+    },
+    {
+        "id": "te_math_n05",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Explain what a Hilbert space is in functional analysis."
+    },
+    {
+        "id": "te_math_n06",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I am considering a career in actuarial science and love math."
+    },
+    {
+        "id": "te_math_n07",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the difference between convergent and divergent series?"
+    },
+    {
+        "id": "te_math_n08",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the birthday paradox and why it surprises people."
+    },
+    {
+        "id": "te_math_n09",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How is algebraic geometry used in modern physics research?"
+    },
+    {
+        "id": "te_math_n10",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What did Terence Tao contribute to the field of mathematics?"
+    },
+    {
+        "id": "te_math_n11",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Explain the concept of a mathematical group in abstract algebra."
+    },
+    {
+        "id": "te_math_n12",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why is the halting problem important in theoretical computer science?"
+    },
+    {
+        "id": "te_math_n13",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the difference between countable and uncountable infinity?"
+    },
+    {
+        "id": "te_math_n14",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I struggle with proofs by contradiction, can you explain the technique?"
+    },
+    {
+        "id": "te_math_n15",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How are wavelets used in signal processing mathematics?"
+    },
+    {
+        "id": "te_math_n16",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the history of the quadratic formula?"
+    },
+    {
+        "id": "te_math_n17",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about how randomness is defined rigorously in math."
+    },
+    {
+        "id": "te_math_n18",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What makes hyperbolic geometry different from Euclidean geometry?"
+    },
+    {
+        "id": "te_math_n19",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I think more schools should teach mathematical thinking and proof writing."
+    },
+    {
+        "id": "te_math_n20",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How does measure theory generalize the concept of length and area?"
+    },
+    {
+        "id": "te_math_n21",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is Ramsey theory about in combinatorial mathematics?"
+    },
+    {
+        "id": "te_math_n22",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Describe the connection between symmetry and group theory."
+    },
+    {
+        "id": "te_math_n23",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How are random matrices studied in modern mathematical physics?"
+    },
+    {
+        "id": "te_math_n24",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What makes the twin prime conjecture so difficult to prove?"
+    },
+    {
+        "id": "te_math_n25",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about mathematical recreations and puzzles through history."
+    },
+    {
+        "id": "te_math_n26",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is a metric space and why is it important in analysis?"
+    },
+    {
+        "id": "te_math_n27",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How are Markov chains used in stochastic modeling?"
+    },
+    {
+        "id": "te_math_n28",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the Langlands program and why is it called a grand unified theory of math?"
+    },
+    {
+        "id": "te_math_n29",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I believe mathematics and philosophy are deeply interconnected."
+    },
+    {
+        "id": "te_math_n30",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about recreational mathematics and Martin Gardner's contributions."
+    },
+    {
+        "id": "te_math_n31",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is operator theory and its applications in quantum mechanics?"
+    },
+    {
+        "id": "te_math_n32",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How does information theory quantify the concept of surprise?"
+    },
+    {
+        "id": "te_math_n33",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the Poincare conjecture and how was it solved by Perelman?"
+    },
+    {
+        "id": "te_math_n34",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Explain the difference between necessary and sufficient conditions in logic."
+    },
+    {
+        "id": "te_math_n35",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How are partial differential equations used in fluid dynamics?"
+    },
+    {
+        "id": "te_math_n36",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the difference between probability distributions that are discrete vs continuous?"
+    },
+    {
+        "id": "te_math_n37",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about Emmy Noether and her groundbreaking theorem."
+    },
+    {
+        "id": "te_math_n38",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is formal verification in mathematics and computer science?"
+    },
+    {
+        "id": "te_math_n39",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I am fascinated by mathematical patterns in nature like spirals and tessellations."
+    },
+    {
+        "id": "te_math_n40",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How do cellular automata modeling relate to mathematics and complexity?"
+    },
+    {
+        "id": "te_code_t01",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to compute the nth Catalan number for n=10."
+    },
+    {
+        "id": "te_code_t02",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find all words longer than 5 characters in the sentence Programming is fun and rewarding."
+    },
+    {
+        "id": "te_code_t03",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to compute the Jaccard similarity between sets {a,b,c,d} and {c,d,e,f}."
+    },
+    {
+        "id": "te_code_t04",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to generate a 4x4 identity matrix."
+    },
+    {
+        "id": "te_code_t05",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to convert the string [1,2,3,4,5] to an actual Python list."
+    },
+    {
+        "id": "te_code_t06",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find all divisors of the number 360."
+    },
+    {
+        "id": "te_code_t07",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to reverse each word in the sentence Hello World Foo Bar."
+    },
+    {
+        "id": "te_code_t08",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to merge two dictionaries {a:1,b:2} and {b:3,c:4} with conflict resolution."
+    },
+    {
+        "id": "te_code_t09",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find the most frequently occurring element in [1,3,2,3,4,3,5,3,6]."
+    },
+    {
+        "id": "te_code_t10",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to generate a random 6-digit OTP code."
+    },
+    {
+        "id": "te_code_t11",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the SHA-256 hash of the string blockchain."
+    },
+    {
+        "id": "te_code_t12",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to decode the base64 string SGVsbG8gV29ybGQ=."
+    },
+    {
+        "id": "te_code_t13",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the interquartile range of [2,4,6,8,10,12,14,16,18,20]."
+    },
+    {
+        "id": "te_code_t14",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to remove all punctuation from the string Hello, World! How's it going?"
+    },
+    {
+        "id": "te_code_t15",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find the top 3 most common characters in the string abracadabra."
+    },
+    {
+        "id": "te_code_t16",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to calculate the difference in days between January 1 2024 and December 31 2024."
+    },
+    {
+        "id": "te_code_t17",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to graph the numbers [3,1,4,1,5,9,2,6] as an ASCII bar chart."
+    },
+    {
+        "id": "te_code_t18",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to check if two binary trees [1,2,3] and [1,2,3] are identical."
+    },
+    {
+        "id": "te_code_t19",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to implement a simple RLE decoder for the string 3a2b5c."
+    },
+    {
+        "id": "te_code_t20",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to find the index of the maximum element in [15,42,8,23,4,16]."
+    },
+    {
+        "id": "te_code_t21",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to compute the edit distance between INTENTION and EXECUTION."
+    },
+    {
+        "id": "te_code_t22",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to interleave two lists [1,3,5] and [2,4,6] alternately."
+    },
+    {
+        "id": "te_code_t23",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to compute the number of trailing zeros in 100 factorial."
+    },
+    {
+        "id": "te_code_t24",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to implement a priority queue and insert items with priorities."
+    },
+    {
+        "id": "te_code_t25",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to compute the Hamming distance between binary strings 1011101 and 1001001."
+    },
+    {
+        "id": "te_code_t26",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find the sum of each column in a 3x3 matrix [[1,2,3],[4,5,6],[7,8,9]]."
+    },
+    {
+        "id": "te_code_t27",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to validate whether 192.168.1.256 is a valid IPv4 address."
+    },
+    {
+        "id": "te_code_t28",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to normalize the vector [3,4] to unit length."
+    },
+    {
+        "id": "te_code_t29",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to convert the Roman numeral MCMXCIV to a decimal number."
+    },
+    {
+        "id": "te_code_t30",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to recursively compute the sum of digits of 987654321."
+    },
+    {
+        "id": "te_code_t31",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to implement insertion sort on [38,27,43,3,9,82,10]."
+    },
+    {
+        "id": "te_code_t32",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to check if the string A man a plan a canal Panama is a palindrome ignoring spaces and case."
+    },
+    {
+        "id": "te_code_t33",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to generate a random maze as a 5x5 grid."
+    },
+    {
+        "id": "te_code_t34",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to compute Euler's totient function for n=36."
+    },
+    {
+        "id": "te_code_t35",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to find the longest line in a multi-line string."
+    },
+    {
+        "id": "te_code_t36",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to check if the number 8128 is a perfect number."
+    },
+    {
+        "id": "te_code_t37",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to compute the binomial coefficient C(15,7)."
+    },
+    {
+        "id": "te_code_t38",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to perform a left rotation on the array [1,2,3,4,5] by 2 positions."
+    },
+    {
+        "id": "te_code_t39",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to generate Pascal's triangle up to row 8."
+    },
+    {
+        "id": "te_code_t40",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find the second most frequent character in the string mississippi."
+    },
+    {
+        "id": "te_code_n01",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the Turing machine and why is it foundational to computer science?"
+    },
+    {
+        "id": "te_code_n02",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of eventual consistency in microservices."
+    },
+    {
+        "id": "te_code_n03",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between a linked list and an array?"
+    },
+    {
+        "id": "te_code_n04",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does copy-on-write optimization work in operating systems?"
+    },
+    {
+        "id": "te_code_n05",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about the philosophy behind the Go programming language."
+    },
+    {
+        "id": "te_code_n06",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is currying and partial application in functional programming?"
+    },
+    {
+        "id": "te_code_n07",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the adapter design pattern with a real-world analogy."
+    },
+    {
+        "id": "te_code_n08",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are the ACID properties of database transactions?"
+    },
+    {
+        "id": "te_code_n09",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does a just-in-time compiler improve runtime performance?"
+    },
+    {
+        "id": "te_code_n10",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between optimistic and pessimistic locking?"
+    },
+    {
+        "id": "te_code_n11",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain what coroutines are and how they differ from threads."
+    },
+    {
+        "id": "te_code_n12",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the Raft consensus algorithm used for in distributed systems?"
+    },
+    {
+        "id": "te_code_n13",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do bloom filters provide space-efficient probabilistic lookups?"
+    },
+    {
+        "id": "te_code_n14",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between composition and inheritance in OOP?"
+    },
+    {
+        "id": "te_code_n15",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe how page replacement algorithms work in virtual memory."
+    },
+    {
+        "id": "te_code_n16",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is chaos engineering and how does Netflix use it?"
+    },
+    {
+        "id": "te_code_n17",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the differences between gRPC and REST API communication."
+    },
+    {
+        "id": "te_code_n18",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the flyweight design pattern and when is it useful?"
+    },
+    {
+        "id": "te_code_n19",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does the Borrow Checker work in Rust for memory safety?"
+    },
+    {
+        "id": "te_code_n20",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are zero-knowledge proofs and their cryptographic applications?"
+    },
+    {
+        "id": "te_code_n21",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of a monorepository versus polyrepository."
+    },
+    {
+        "id": "te_code_n22",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between a process and a daemon?"
+    },
+    {
+        "id": "te_code_n23",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do content delivery networks reduce latency for web users?"
+    },
+    {
+        "id": "te_code_n24",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the principle of least privilege in security design?"
+    },
+    {
+        "id": "te_code_n25",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain how consistent hashing helps in distributed caching."
+    },
+    {
+        "id": "te_code_n26",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between stateful and stateless services?"
+    },
+    {
+        "id": "te_code_n27",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do generics and templates provide type-safe polymorphism?"
+    },
+    {
+        "id": "te_code_n28",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the saga pattern for managing distributed transactions?"
+    },
+    {
+        "id": "te_code_n29",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Describe how SSL/TLS handshake establishes a secure connection."
+    },
+    {
+        "id": "te_code_n30",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is a skip list and how does it achieve O(log n) operations?"
+    },
+    {
+        "id": "te_code_n31",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the concept of back pressure in reactive programming."
+    },
+    {
+        "id": "te_code_n32",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is feature flagging and how does it enable safe deployments?"
+    },
+    {
+        "id": "te_code_n33",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does a write-ahead log ensure durability in databases?"
+    },
+    {
+        "id": "te_code_n34",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is contract testing and how does it differ from integration testing?"
+    },
+    {
+        "id": "te_code_n35",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain the difference between strong and eventual consistency models."
+    },
+    {
+        "id": "te_code_n36",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are the key differences between Docker and virtual machines?"
+    },
+    {
+        "id": "te_code_n37",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does connection pooling improve database application performance?"
+    },
+    {
+        "id": "te_code_n38",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the outbox pattern for reliable event publishing?"
+    },
+    {
+        "id": "te_code_n39",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Explain how blue-green deployment works for zero-downtime releases."
+    },
+    {
+        "id": "te_code_n40",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is domain-driven design and how does it guide software architecture?"
+    },
+    {
+        "id": "te_search_t01",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the current price of NVIDIA stock and its market cap."
+    },
+    {
+        "id": "te_search_t02",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the best wireless noise-cancelling headphones in 2024."
+    },
+    {
+        "id": "te_search_t03",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up today's Major League Baseball scores and standings."
+    },
+    {
+        "id": "te_search_t04",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find vegan restaurants with outdoor seating in Austin Texas."
+    },
+    {
+        "id": "te_search_t05",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest iOS 18 features announced by Apple."
+    },
+    {
+        "id": "te_search_t06",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find recently published clinical trials on Alzheimer's treatment."
+    },
+    {
+        "id": "te_search_t07",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the current price of crude oil per barrel."
+    },
+    {
+        "id": "te_search_t08",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find detailed specs comparison between M3 Pro and M3 Max chips."
+    },
+    {
+        "id": "te_search_t09",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for overnight shipping options from Amazon for my order."
+    },
+    {
+        "id": "te_search_t10",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the UV index for Miami Beach Florida today."
+    },
+    {
+        "id": "te_search_t11",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest developments in autonomous vehicle technology."
+    },
+    {
+        "id": "te_search_t12",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for art exhibitions opening in New York this month."
+    },
+    {
+        "id": "te_search_t13",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the ingredients list and allergens in Oreo cookies."
+    },
+    {
+        "id": "te_search_t14",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find treehouse rental accommodations in the Pacific Northwest."
+    },
+    {
+        "id": "te_search_t15",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for active volcano warnings in Iceland right now."
+    },
+    {
+        "id": "te_search_t16",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the median household income in California for 2024."
+    },
+    {
+        "id": "te_search_t17",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the best password manager apps rated by security experts."
+    },
+    {
+        "id": "te_search_t18",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the total DeFi total value locked across all blockchains."
+    },
+    {
+        "id": "te_search_t19",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up Amtrak train routes from Boston to Washington DC."
+    },
+    {
+        "id": "te_search_t20",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the street date for the next Elder Scrolls game."
+    },
+    {
+        "id": "te_search_t21",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for scholarship opportunities for computer science students."
+    },
+    {
+        "id": "te_search_t22",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the Formula 1 race calendar and driver standings."
+    },
+    {
+        "id": "te_search_t23",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find scenic road trip routes along the Pacific Coast Highway."
+    },
+    {
+        "id": "te_search_t24",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for TED talks about creativity uploaded this year."
+    },
+    {
+        "id": "te_search_t25",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the recipe and reviews for New York style cheesecake."
+    },
+    {
+        "id": "te_search_t26",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find urgent care clinics open right now near zip code 94105."
+    },
+    {
+        "id": "te_search_t27",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest Blue Origin space tourism flight details."
+    },
+    {
+        "id": "te_search_t28",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the requirements for a work visa in Canada for Americans."
+    },
+    {
+        "id": "te_search_t29",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the Goodreads top-rated science fiction books of 2024."
+    },
+    {
+        "id": "te_search_t30",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for real-time traffic conditions on Interstate 405 in LA."
+    },
+    {
+        "id": "te_search_t31",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up internship programs at DeepMind for PhD students."
+    },
+    {
+        "id": "te_search_t32",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest Hubble Space Telescope image releases."
+    },
+    {
+        "id": "te_search_t33",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for maker spaces with 3D printers in Brooklyn NY."
+    },
+    {
+        "id": "te_search_t34",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the average cost of daycare per month in the US."
+    },
+    {
+        "id": "te_search_t35",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the streaming platform availability for the new Dune movie."
+    },
+    {
+        "id": "te_search_t36",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest FDA food safety recall notices."
+    },
+    {
+        "id": "te_search_t37",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the latest Android 15 features and supported devices."
+    },
+    {
+        "id": "te_search_t38",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find free online tools for creating website wireframes."
+    },
+    {
+        "id": "te_search_t39",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the best beaches for surfing in Hawaii."
+    },
+    {
+        "id": "te_search_t40",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the latest repo rate set by the European Central Bank."
+    },
+    {
+        "id": "te_search_n01",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the Coriolis effect and how does it influence weather?"
+    },
+    {
+        "id": "te_search_n02",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does nuclear fission differ from nuclear fusion?"
+    },
+    {
+        "id": "te_search_n03",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the development of writing in ancient Mesopotamia."
+    },
+    {
+        "id": "te_search_n04",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is virtue ethics as proposed by Aristotle?"
+    },
+    {
+        "id": "te_search_n05",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the lymphatic system support the immune system?"
+    },
+    {
+        "id": "te_search_n06",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the three laws of thermodynamics?"
+    },
+    {
+        "id": "te_search_n07",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Meiji Restoration and modernization of Japan."
+    },
+    {
+        "id": "te_search_n08",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do batteries store and release chemical energy?"
+    },
+    {
+        "id": "te_search_n09",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the photoelectric effect that Einstein explained?"
+    },
+    {
+        "id": "te_search_n10",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Describe Art Deco architecture and its most famous buildings."
+    },
+    {
+        "id": "te_search_n11",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do seismographs detect and measure earthquakes?"
+    },
+    {
+        "id": "te_search_n12",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is moral relativism versus moral absolutism?"
+    },
+    {
+        "id": "te_search_n13",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Explain how routing protocols determine the best network path."
+    },
+    {
+        "id": "te_search_n14",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What causes the aurora borealis phenomenon?"
+    },
+    {
+        "id": "te_search_n15",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about Surrealism in art and its key artists."
+    },
+    {
+        "id": "te_search_n16",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do stem cells differentiate into specialized cell types?"
+    },
+    {
+        "id": "te_search_n17",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is wave-particle duality in quantum mechanics?"
+    },
+    {
+        "id": "te_search_n18",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Describe the role of mycelium networks in forest ecosystems."
+    },
+    {
+        "id": "te_search_n19",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What were the key factors leading to the fall of the Ottoman Empire?"
+    },
+    {
+        "id": "te_search_n20",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does inflation erode the purchasing power of a currency?"
+    },
+    {
+        "id": "te_search_n21",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the Drake equation for estimating extraterrestrial civilizations?"
+    },
+    {
+        "id": "te_search_n22",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the placebo effect work in medical trials?"
+    },
+    {
+        "id": "te_search_n23",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Polynesian wayfinding navigation techniques."
+    },
+    {
+        "id": "te_search_n24",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the key differences between prokaryotic and eukaryotic cells?"
+    },
+    {
+        "id": "te_search_n25",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Explain the concept of opportunity cost in decision making."
+    },
+    {
+        "id": "te_search_n26",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do refrigerators use thermodynamic principles to cool food?"
+    },
+    {
+        "id": "te_search_n27",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the history of the Olympic Games from ancient Greece to today?"
+    },
+    {
+        "id": "te_search_n28",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does herd immunity work in populations?"
+    },
+    {
+        "id": "te_search_n29",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is Schrodinger's cat thought experiment about?"
+    },
+    {
+        "id": "te_search_n30",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the major biomes of the Earth and their characteristics."
+    },
+    {
+        "id": "te_search_n31",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What was the significance of the Gutenberg printing press?"
+    },
+    {
+        "id": "te_search_n32",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the vestibular system help maintain balance?"
+    },
+    {
+        "id": "te_search_n33",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the difference between deductive and inductive reasoning?"
+    },
+    {
+        "id": "te_search_n34",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do glaciers shape the landscape through erosion?"
+    },
+    {
+        "id": "te_search_n35",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the philosophical concept of the social contract."
+    },
+    {
+        "id": "te_search_n36",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the function of mitochondria in eukaryotic cells?"
+    },
+    {
+        "id": "te_search_n37",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does radar technology detect objects at a distance?"
+    },
+    {
+        "id": "te_search_n38",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is stoichiometry and why is it important in chemistry?"
+    },
+    {
+        "id": "te_search_n39",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the impact of the Columbian Exchange on world history."
+    },
+    {
+        "id": "te_search_n40",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the carbon cycle regulate Earth's atmosphere?"
+    },
+    {
+        "id": "te_trans_t01",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please keep the door closed at all times' to Korean."
+    },
+    {
+        "id": "te_trans_t02",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '最近のAI技術の進歩は目覚ましいです' from Japanese to English."
+    },
+    {
+        "id": "te_trans_t03",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The children are playing in the park' to French."
+    },
+    {
+        "id": "te_trans_t04",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Wo kann ich ein Taxi finden?' from German to English."
+    },
+    {
+        "id": "te_trans_t05",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'We have a meeting at nine o'clock' to Mandarin Chinese."
+    },
+    {
+        "id": "te_trans_t06",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '이 보고서를 오늘까지 완성해야 합니다' from Korean to English."
+    },
+    {
+        "id": "te_trans_t07",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The concert has been sold out' to Spanish."
+    },
+    {
+        "id": "te_trans_t08",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'No hay mal que por bien no venga' from Spanish to English."
+    },
+    {
+        "id": "te_trans_t09",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I left my keys in the car' to German."
+    },
+    {
+        "id": "te_trans_t10",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'La musica è il cibo dell'anima' from Italian to English."
+    },
+    {
+        "id": "te_trans_t11",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The elevator is out of service today' to Japanese."
+    },
+    {
+        "id": "te_trans_t12",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '深度学习正在改变医疗诊断' from Chinese to English."
+    },
+    {
+        "id": "te_trans_t13",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Can I get a receipt for this purchase?' to Italian."
+    },
+    {
+        "id": "te_trans_t14",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Образование открывает двери к возможностям' from Russian to English."
+    },
+    {
+        "id": "te_trans_t15",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The warranty covers defects for two years' to Arabic."
+    },
+    {
+        "id": "te_trans_t16",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'O futuro pertence àqueles que acreditam' from Portuguese to English."
+    },
+    {
+        "id": "te_trans_t17",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The swimming pool is heated year round' to Korean."
+    },
+    {
+        "id": "te_trans_t18",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Cette application est disponible sur toutes les plateformes' from French to English."
+    },
+    {
+        "id": "te_trans_t19",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The fire exit is at the end of the hallway' to Chinese."
+    },
+    {
+        "id": "te_trans_t20",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '일본어를 배우는 것은 도전적이지만 보람이 있습니다' from Korean to English."
+    },
+    {
+        "id": "te_trans_t21",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Breakfast is served from 7 AM to 10 AM' to Japanese."
+    },
+    {
+        "id": "te_trans_t22",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Ich bin mit dem Ergebnis sehr zufrieden' from German to English."
+    },
+    {
+        "id": "te_trans_t23",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The network connection timed out' to Spanish."
+    },
+    {
+        "id": "te_trans_t24",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Chi dorme non piglia pesci' from Italian to English."
+    },
+    {
+        "id": "te_trans_t25",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Your package has been delivered to the front desk' to French."
+    },
+    {
+        "id": "te_trans_t26",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Каждый день приносит новые возможности' from Russian to English."
+    },
+    {
+        "id": "te_trans_t27",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The air conditioning is set to 22 degrees' to Arabic."
+    },
+    {
+        "id": "te_trans_t28",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Aprender nunca é demais' from Portuguese to English."
+    },
+    {
+        "id": "te_trans_t29",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please confirm your attendance by Friday' to German."
+    },
+    {
+        "id": "te_trans_t30",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '기술 혁신이 사회를 변화시키고 있습니다' from Korean to English."
+    },
+    {
+        "id": "te_trans_t31",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The return policy allows exchanges within 30 days' to Chinese."
+    },
+    {
+        "id": "te_trans_t32",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '今日は特別なお知らせがあります' from Japanese to English."
+    },
+    {
+        "id": "te_trans_t33",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please wear a helmet while riding a bicycle' to Italian."
+    },
+    {
+        "id": "te_trans_t34",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'El aprendizaje es un viaje sin fin' from Spanish to English."
+    },
+    {
+        "id": "te_trans_t35",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The system will undergo maintenance tonight from midnight to 4 AM' to Korean."
+    },
+    {
+        "id": "te_trans_t36",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Знание — сила' from Russian to English."
+    },
+    {
+        "id": "te_trans_t37",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please enter your password to continue' to Arabic."
+    },
+    {
+        "id": "te_trans_t38",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'A prática leva à perfeição' from Portuguese to English."
+    },
+    {
+        "id": "te_trans_t39",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Your feedback helps us improve our service' to French."
+    },
+    {
+        "id": "te_trans_t40",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '이 소프트웨어의 최신 버전을 다운로드하세요' from Korean to English."
+    },
+    {
+        "id": "te_trans_n01",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the different writing directions used around the world?"
+    },
+    {
+        "id": "te_trans_n02",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How did the Proto-Indo-European language give rise to so many modern languages?"
+    },
+    {
+        "id": "te_trans_n03",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the role of lingua francas throughout history."
+    },
+    {
+        "id": "te_trans_n04",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the difference between synthetic and analytic languages?"
+    },
+    {
+        "id": "te_trans_n05",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do sign language interpreters work in legal proceedings?"
+    },
+    {
+        "id": "te_trans_n06",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the challenges of creating a universal language?"
+    },
+    {
+        "id": "te_trans_n07",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the influence of Arabic on Spanish vocabulary."
+    },
+    {
+        "id": "te_trans_n08",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does second language acquisition differ in adults versus children?"
+    },
+    {
+        "id": "te_trans_n09",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the distinctive features of the Thai language?"
+    },
+    {
+        "id": "te_trans_n10",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How did colonialism affect language diversity in Africa?"
+    },
+    {
+        "id": "te_trans_n11",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is a phoneme and how do languages differ in their phoneme inventories?"
+    },
+    {
+        "id": "te_trans_n12",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Tibetan writing system and its origins."
+    },
+    {
+        "id": "te_trans_n13",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the relationship between language and cultural identity?"
+    },
+    {
+        "id": "te_trans_n14",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do neural machine translation models work internally?"
+    },
+    {
+        "id": "te_trans_n15",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is an endangered language and how many are there?"
+    },
+    {
+        "id": "te_trans_n16",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Inuit languages and their many words for snow."
+    },
+    {
+        "id": "te_trans_n17",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do language disorders like aphasia affect communication?"
+    },
+    {
+        "id": "te_trans_n18",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the Uralic language family and which languages belong to it?"
+    },
+    {
+        "id": "te_trans_n19",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do professional subtitlers handle cultural references in movies?"
+    },
+    {
+        "id": "te_trans_n20",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is computational linguistics and what are its main applications?"
+    },
+    {
+        "id": "te_trans_n21",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Ge'ez script used in Ethiopian languages."
+    },
+    {
+        "id": "te_trans_n22",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does pragmatic transfer cause miscommunication between languages?"
+    },
+    {
+        "id": "te_trans_n23",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the Altaic language hypothesis and why is it controversial?"
+    },
+    {
+        "id": "te_trans_n24",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does sentence structure differ between SOV and SVO languages?"
+    },
+    {
+        "id": "te_trans_n25",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the main branches of the Sino-Tibetan language family?"
+    },
+    {
+        "id": "te_trans_n26",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Braille writing system and its development."
+    },
+    {
+        "id": "te_trans_n27",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do whistled languages like Silbo Gomero transmit information?"
+    },
+    {
+        "id": "te_trans_n28",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is sociolinguistics and what questions does it explore?"
+    },
+    {
+        "id": "te_trans_n29",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do spoken and written language differ in their properties?"
+    },
+    {
+        "id": "te_trans_n30",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about BLEU score and how machine translation quality is measured."
+    },
+    {
+        "id": "te_trans_n31",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are classifier languages and how do they categorize nouns?"
+    },
+    {
+        "id": "te_trans_n32",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How has language contact led to mixed languages like Michif?"
+    },
+    {
+        "id": "te_trans_n33",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the Nostratic macro-family hypothesis in historical linguistics?"
+    },
+    {
+        "id": "te_trans_n34",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do language policies shape education in multilingual countries?"
+    },
+    {
+        "id": "te_trans_n35",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the grammaticalization process in language change."
+    },
+    {
+        "id": "te_trans_n36",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the difference between descriptive and prescriptive grammar?"
+    },
+    {
+        "id": "te_trans_n37",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do AI language models handle low-resource languages?"
+    },
+    {
+        "id": "te_trans_n38",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are polysynthetic languages and what makes them unique?"
+    },
+    {
+        "id": "te_trans_n39",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the development of international phonetic transcription."
+    },
+    {
+        "id": "te_trans_n40",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How does the concept of politeness vary across different languages?"
+    }
+]

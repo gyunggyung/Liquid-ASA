@@ -1,0 +1,1922 @@
+[
+    {
+        "id": "cal_math_t01",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 15% tip on an $85.50 dinner bill."
+    },
+    {
+        "id": "cal_math_t02",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 1247 multiplied by 389?"
+    },
+    {
+        "id": "cal_math_t03",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 72 degrees Fahrenheit to Celsius."
+    },
+    {
+        "id": "cal_math_t04",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the compound interest on $5000 at 4.5% annual rate for 3 years."
+    },
+    {
+        "id": "cal_math_t05",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the square root of 2744?"
+    },
+    {
+        "id": "cal_math_t06",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If I drive 340 miles at 55 mph, how long will the trip take?"
+    },
+    {
+        "id": "cal_math_t07",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 23% sales tax on a $1299 laptop."
+    },
+    {
+        "id": "cal_math_t08",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 15 factorial?"
+    },
+    {
+        "id": "cal_math_t09",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 3.5 kilometers to miles."
+    },
+    {
+        "id": "cal_math_t10",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the area of a circle with radius 7.3 cm."
+    },
+    {
+        "id": "cal_math_t11",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 987 divided by 13?"
+    },
+    {
+        "id": "cal_math_t12",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If a shirt costs $45 and is 30% off, what is the final price?"
+    },
+    {
+        "id": "cal_math_t13",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the hypotenuse of a right triangle with legs 5 and 12."
+    },
+    {
+        "id": "cal_math_t14",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 2 to the power of 16?"
+    },
+    {
+        "id": "cal_math_t15",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 180 pounds to kilograms."
+    },
+    {
+        "id": "cal_math_t16",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the monthly payment on a $250000 mortgage at 6.5% for 30 years."
+    },
+    {
+        "id": "cal_math_t17",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the greatest common divisor of 84 and 126?"
+    },
+    {
+        "id": "cal_math_t18",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate 18% gratuity on a $127.50 restaurant bill."
+    },
+    {
+        "id": "cal_math_t19",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the sum of all integers from 1 to 100?"
+    },
+    {
+        "id": "cal_math_t20",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 2.5 liters to fluid ounces."
+    },
+    {
+        "id": "cal_math_t21",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the volume of a cylinder with radius 4 cm and height 10 cm."
+    },
+    {
+        "id": "cal_math_t22",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 3456 minus 1789?"
+    },
+    {
+        "id": "cal_math_t23",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If I earn $65000 annually, what is my monthly salary before taxes?"
+    },
+    {
+        "id": "cal_math_t24",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the perimeter of a rectangle that is 15m by 8m."
+    },
+    {
+        "id": "cal_math_t25",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 45% of 2300?"
+    },
+    {
+        "id": "cal_math_t26",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 100 meters per second to kilometers per hour."
+    },
+    {
+        "id": "cal_math_t27",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the average of 78, 92, 85, 67, and 91."
+    },
+    {
+        "id": "cal_math_t28",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the least common multiple of 12 and 18?"
+    },
+    {
+        "id": "cal_math_t29",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If gas costs $3.89 per gallon and my tank holds 14 gallons, how much to fill up?"
+    },
+    {
+        "id": "cal_math_t30",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the diagonal of a rectangle with sides 6 and 8."
+    },
+    {
+        "id": "cal_math_t31",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 17 cubed?"
+    },
+    {
+        "id": "cal_math_t32",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 350 grams to ounces."
+    },
+    {
+        "id": "cal_math_t33",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the simple interest on $10000 at 3% for 5 years."
+    },
+    {
+        "id": "cal_math_t34",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 1 divided by 7 expressed as a decimal?"
+    },
+    {
+        "id": "cal_math_t35",
+        "domain": "math",
+        "label": 1,
+        "instruction": "If a recipe calls for 2.5 cups and I want to triple it, how many cups do I need?"
+    },
+    {
+        "id": "cal_math_t36",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate the circumference of a circle with diameter 14 inches."
+    },
+    {
+        "id": "cal_math_t37",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is 999 times 999?"
+    },
+    {
+        "id": "cal_math_t38",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Convert 45 degrees to radians."
+    },
+    {
+        "id": "cal_math_t39",
+        "domain": "math",
+        "label": 1,
+        "instruction": "Calculate my BMI if I weigh 75 kg and am 1.78 m tall."
+    },
+    {
+        "id": "cal_math_t40",
+        "domain": "math",
+        "label": 1,
+        "instruction": "What is the surface area of a sphere with radius 5 cm?"
+    },
+    {
+        "id": "cal_math_n01",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I just got an A in my calculus class and I am so happy about it!"
+    },
+    {
+        "id": "cal_math_n02",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Can you explain what differential equations are used for?"
+    },
+    {
+        "id": "cal_math_n03",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I find geometry fascinating especially when it comes to proofs."
+    },
+    {
+        "id": "cal_math_n04",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the history of pi and how it was discovered."
+    },
+    {
+        "id": "cal_math_n05",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What makes prime numbers so important in mathematics?"
+    },
+    {
+        "id": "cal_math_n06",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I have always struggled with math but I want to get better at it."
+    },
+    {
+        "id": "cal_math_n07",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Can you describe the Pythagorean theorem in simple terms?"
+    },
+    {
+        "id": "cal_math_n08",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why is mathematics considered the language of the universe?"
+    },
+    {
+        "id": "cal_math_n09",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What are some real-world applications of linear algebra?"
+    },
+    {
+        "id": "cal_math_n10",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I am thinking about majoring in applied mathematics."
+    },
+    {
+        "id": "cal_math_n11",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about famous mathematicians like Euler and Gauss."
+    },
+    {
+        "id": "cal_math_n12",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the difference between pure and applied mathematics?"
+    },
+    {
+        "id": "cal_math_n13",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How does statistics differ from probability theory?"
+    },
+    {
+        "id": "cal_math_n14",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I love solving Sudoku puzzles in my free time."
+    },
+    {
+        "id": "cal_math_n15",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Can you explain what an irrational number is?"
+    },
+    {
+        "id": "cal_math_n16",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What makes the Fibonacci sequence appear in nature?"
+    },
+    {
+        "id": "cal_math_n17",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I am curious about chaos theory and the butterfly effect."
+    },
+    {
+        "id": "cal_math_n18",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the Riemann hypothesis and why it matters."
+    },
+    {
+        "id": "cal_math_n19",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why do students find algebra so challenging?"
+    },
+    {
+        "id": "cal_math_n20",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is topology and how does it relate to geometry?"
+    },
+    {
+        "id": "cal_math_n21",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I recently read a book about the beauty of mathematical proofs."
+    },
+    {
+        "id": "cal_math_n22",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Can you describe what fractals are in simple terms?"
+    },
+    {
+        "id": "cal_math_n23",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How is math used in machine learning algorithms?"
+    },
+    {
+        "id": "cal_math_n24",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I want to understand the concept of infinity better."
+    },
+    {
+        "id": "cal_math_n25",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about game theory and its applications in economics."
+    },
+    {
+        "id": "cal_math_n26",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the connection between music and mathematics?"
+    },
+    {
+        "id": "cal_math_n27",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I am amazed by how math can describe physical phenomena."
+    },
+    {
+        "id": "cal_math_n28",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Can you explain the concept of mathematical induction?"
+    },
+    {
+        "id": "cal_math_n29",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What are imaginary numbers and why do they exist?"
+    },
+    {
+        "id": "cal_math_n30",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How did ancient civilizations use mathematics?"
+    },
+    {
+        "id": "cal_math_n31",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about cryptography and its mathematical foundations."
+    },
+    {
+        "id": "cal_math_n32",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I enjoy watching math YouTube channels like Numberphile."
+    },
+    {
+        "id": "cal_math_n33",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What is the significance of Euler's identity e^(i*pi)+1=0?"
+    },
+    {
+        "id": "cal_math_n34",
+        "domain": "math",
+        "label": 0,
+        "instruction": "How do mathematicians discover new theorems?"
+    },
+    {
+        "id": "cal_math_n35",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I am interested in learning about combinatorics."
+    },
+    {
+        "id": "cal_math_n36",
+        "domain": "math",
+        "label": 0,
+        "instruction": "What role does mathematics play in modern economics?"
+    },
+    {
+        "id": "cal_math_n37",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Tell me about the four-color theorem in graph theory."
+    },
+    {
+        "id": "cal_math_n38",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Why is zero considered such an important number in math?"
+    },
+    {
+        "id": "cal_math_n39",
+        "domain": "math",
+        "label": 0,
+        "instruction": "I think math is beautiful when you understand the patterns."
+    },
+    {
+        "id": "cal_math_n40",
+        "domain": "math",
+        "label": 0,
+        "instruction": "Can you recommend some good introductory books about mathematics?"
+    },
+    {
+        "id": "cal_code_t01",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python code to find the maximum value in the list [34, 78, 12, 56, 90, 23]."
+    },
+    {
+        "id": "cal_code_t02",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run a Python script to sort the array [5, 2, 8, 1, 9, 3] in ascending order."
+    },
+    {
+        "id": "cal_code_t03",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Write and execute Python code to check if the word racecar is a palindrome."
+    },
+    {
+        "id": "cal_code_t04",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python code to calculate the Fibonacci sequence up to the 20th term."
+    },
+    {
+        "id": "cal_code_t05",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to count the number of vowels in the string Hello World."
+    },
+    {
+        "id": "cal_code_t06",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run a Python function to find all prime numbers between 1 and 100."
+    },
+    {
+        "id": "cal_code_t07",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python code to reverse the string artificial intelligence."
+    },
+    {
+        "id": "cal_code_t08",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to merge two sorted lists [1, 3, 5] and [2, 4, 6] into one sorted list."
+    },
+    {
+        "id": "cal_code_t09",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Write and run Python code to find the second largest number in [45, 78, 12, 89, 34]."
+    },
+    {
+        "id": "cal_code_t10",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to generate a random password of length 12 with letters and digits."
+    },
+    {
+        "id": "cal_code_t11",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python code to convert the string 2024-01-15 to a datetime object and get the day of the week."
+    },
+    {
+        "id": "cal_code_t12",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to flatten the nested list [[1, 2], [3, [4, 5]], [6]]."
+    },
+    {
+        "id": "cal_code_t13",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to calculate the standard deviation of [10, 20, 30, 40, 50]."
+    },
+    {
+        "id": "cal_code_t14",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to remove duplicate elements from [1, 2, 2, 3, 4, 4, 5]."
+    },
+    {
+        "id": "cal_code_t15",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run a Python script to count word frequencies in the sentence the cat sat on the mat the cat."
+    },
+    {
+        "id": "cal_code_t16",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find the intersection of sets {1,2,3,4} and {3,4,5,6}."
+    },
+    {
+        "id": "cal_code_t17",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python code to convert a dictionary {a:1, b:2, c:3} to a list of tuples."
+    },
+    {
+        "id": "cal_code_t18",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to check if the number 371 is an Armstrong number."
+    },
+    {
+        "id": "cal_code_t19",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to implement binary search on [2,5,8,12,16,23,38,56,72,91] for value 23."
+    },
+    {
+        "id": "cal_code_t20",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to calculate the matrix multiplication of [[1,2],[3,4]] and [[5,6],[7,8]]."
+    },
+    {
+        "id": "cal_code_t21",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to generate the first 10 terms of a geometric sequence starting with 2 and ratio 3."
+    },
+    {
+        "id": "cal_code_t22",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to find all pairs in [1, 5, 7, -1, 5] that sum to 6."
+    },
+    {
+        "id": "cal_code_t23",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run Python to convert Hello World to its ASCII values."
+    },
+    {
+        "id": "cal_code_t24",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute code to implement a stack data structure and perform push and pop operations."
+    },
+    {
+        "id": "cal_code_t25",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find the longest common substring between abcdef and zbcdf."
+    },
+    {
+        "id": "cal_code_t26",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to transpose the matrix [[1,2,3],[4,5,6],[7,8,9]]."
+    },
+    {
+        "id": "cal_code_t27",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to validate if test@email.com is a valid email format using regex."
+    },
+    {
+        "id": "cal_code_t28",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python code to calculate the dot product of vectors [1,2,3] and [4,5,6]."
+    },
+    {
+        "id": "cal_code_t29",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to convert the decimal number 255 to its binary representation."
+    },
+    {
+        "id": "cal_code_t30",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to create a frequency histogram of characters in mississippi."
+    },
+    {
+        "id": "cal_code_t31",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to implement bubble sort on [64, 34, 25, 12, 22, 11, 90]."
+    },
+    {
+        "id": "cal_code_t32",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to find the GCD of 48 and 18 using the Euclidean algorithm."
+    },
+    {
+        "id": "cal_code_t33",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to parse the JSON string {name:John,age:30} and access the name field."
+    },
+    {
+        "id": "cal_code_t34",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to generate all permutations of the list [1, 2, 3]."
+    },
+    {
+        "id": "cal_code_t35",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to calculate the Euclidean distance between points (3,4) and (7,1)."
+    },
+    {
+        "id": "cal_code_t36",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to check if the string ({[]}) has balanced brackets."
+    },
+    {
+        "id": "cal_code_t37",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to find the median of the list [3, 1, 4, 1, 5, 9, 2, 6]."
+    },
+    {
+        "id": "cal_code_t38",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to create a Caesar cipher with shift 3 for the text HELLO."
+    },
+    {
+        "id": "cal_code_t39",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Run code to reverse a linked list represented as [1, 2, 3, 4, 5]."
+    },
+    {
+        "id": "cal_code_t40",
+        "domain": "code",
+        "label": 1,
+        "instruction": "Execute Python to calculate 10 choose 3 using the combinations formula."
+    },
+    {
+        "id": "cal_code_n01",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is Python and why is it so popular among developers?"
+    },
+    {
+        "id": "cal_code_n02",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain the concept of object-oriented programming?"
+    },
+    {
+        "id": "cal_code_n03",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between a list and a tuple in Python?"
+    },
+    {
+        "id": "cal_code_n04",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does garbage collection work in programming languages?"
+    },
+    {
+        "id": "cal_code_n05",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about the history of the C programming language."
+    },
+    {
+        "id": "cal_code_n06",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is recursion and when should I use it in my code?"
+    },
+    {
+        "id": "cal_code_n07",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain what an API is in simple terms?"
+    },
+    {
+        "id": "cal_code_n08",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are design patterns in software engineering?"
+    },
+    {
+        "id": "cal_code_n09",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does version control with Git work?"
+    },
+    {
+        "id": "cal_code_n10",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between compiled and interpreted languages?"
+    },
+    {
+        "id": "cal_code_n11",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about functional programming paradigms."
+    },
+    {
+        "id": "cal_code_n12",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is Big O notation and why does it matter for performance?"
+    },
+    {
+        "id": "cal_code_n13",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do databases differ from regular file systems for storing data?"
+    },
+    {
+        "id": "cal_code_n14",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the Model-View-Controller architecture pattern?"
+    },
+    {
+        "id": "cal_code_n15",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain what Docker containers are and why they are useful?"
+    },
+    {
+        "id": "cal_code_n16",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between SQL and NoSQL databases?"
+    },
+    {
+        "id": "cal_code_n17",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about test-driven development practices in software."
+    },
+    {
+        "id": "cal_code_n18",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are microservices and how do they differ from monolithic architectures?"
+    },
+    {
+        "id": "cal_code_n19",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does memory management work in C++ programs?"
+    },
+    {
+        "id": "cal_code_n20",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between deep copy and shallow copy of objects?"
+    },
+    {
+        "id": "cal_code_n21",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain what RESTful APIs are and their design principles?"
+    },
+    {
+        "id": "cal_code_n22",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is continuous integration and continuous deployment in DevOps?"
+    },
+    {
+        "id": "cal_code_n23",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about common data structures like trees and graphs."
+    },
+    {
+        "id": "cal_code_n24",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between HTTP and HTTPS protocols?"
+    },
+    {
+        "id": "cal_code_n25",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does multithreading work in Java applications?"
+    },
+    {
+        "id": "cal_code_n26",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are lambda functions and when should I use them?"
+    },
+    {
+        "id": "cal_code_n27",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain the concept of polymorphism in OOP?"
+    },
+    {
+        "id": "cal_code_n28",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is agile methodology in software development projects?"
+    },
+    {
+        "id": "cal_code_n29",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about the SOLID principles in object-oriented design."
+    },
+    {
+        "id": "cal_code_n30",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between frontend and backend development?"
+    },
+    {
+        "id": "cal_code_n31",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How do hash tables work internally for fast lookups?"
+    },
+    {
+        "id": "cal_code_n32",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is machine learning and how is it related to programming?"
+    },
+    {
+        "id": "cal_code_n33",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain what WebSocket connections are used for?"
+    },
+    {
+        "id": "cal_code_n34",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between stack and heap memory allocation?"
+    },
+    {
+        "id": "cal_code_n35",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Tell me about popular web frameworks like Django and Flask."
+    },
+    {
+        "id": "cal_code_n36",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are closures in JavaScript and how do they work?"
+    },
+    {
+        "id": "cal_code_n37",
+        "domain": "code",
+        "label": 0,
+        "instruction": "How does blockchain technology work from a programming perspective?"
+    },
+    {
+        "id": "cal_code_n38",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What is the difference between synchronous and asynchronous programming?"
+    },
+    {
+        "id": "cal_code_n39",
+        "domain": "code",
+        "label": 0,
+        "instruction": "Can you explain what serverless computing means for developers?"
+    },
+    {
+        "id": "cal_code_n40",
+        "domain": "code",
+        "label": 0,
+        "instruction": "What are the best practices for writing clean and maintainable code?"
+    },
+    {
+        "id": "cal_search_t01",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest news about artificial intelligence developments in 2024."
+    },
+    {
+        "id": "cal_search_t02",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find images of the Northern Lights in Iceland."
+    },
+    {
+        "id": "cal_search_t03",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the current stock price of Apple Inc today."
+    },
+    {
+        "id": "cal_search_t04",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the best Italian restaurants near Times Square New York."
+    },
+    {
+        "id": "cal_search_t05",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the schedule for the 2024 Olympics opening ceremony."
+    },
+    {
+        "id": "cal_search_t06",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for recent scientific papers about CRISPR gene editing."
+    },
+    {
+        "id": "cal_search_t07",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the current exchange rate between USD and EUR."
+    },
+    {
+        "id": "cal_search_t08",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find reviews for the latest Samsung Galaxy smartphone model."
+    },
+    {
+        "id": "cal_search_t09",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for flight prices from New York to London next month."
+    },
+    {
+        "id": "cal_search_t10",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the weather forecast for Tokyo this weekend."
+    },
+    {
+        "id": "cal_search_t11",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest research on renewable energy technologies."
+    },
+    {
+        "id": "cal_search_t12",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for upcoming concerts in Los Angeles this month."
+    },
+    {
+        "id": "cal_search_t13",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the nutritional information for a McDonald's Big Mac."
+    },
+    {
+        "id": "cal_search_t14",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the top-rated hotels in Barcelona Spain for summer."
+    },
+    {
+        "id": "cal_search_t15",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the most recent earthquake reports worldwide."
+    },
+    {
+        "id": "cal_search_t16",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the current population of India as of 2024."
+    },
+    {
+        "id": "cal_search_t17",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find open-source alternatives to Adobe Photoshop."
+    },
+    {
+        "id": "cal_search_t18",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest cryptocurrency market trends today."
+    },
+    {
+        "id": "cal_search_t19",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up train schedules from Paris to Amsterdam for next week."
+    },
+    {
+        "id": "cal_search_t20",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the specs and price of the latest MacBook Pro model."
+    },
+    {
+        "id": "cal_search_t21",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for volunteer opportunities in the San Francisco area."
+    },
+    {
+        "id": "cal_search_t22",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the results of the most recent Premier League matches."
+    },
+    {
+        "id": "cal_search_t23",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the best hiking trails in the Rocky Mountains with reviews."
+    },
+    {
+        "id": "cal_search_t24",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for online courses about data science on Coursera."
+    },
+    {
+        "id": "cal_search_t25",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the recipe for authentic Korean bibimbap with ingredients."
+    },
+    {
+        "id": "cal_search_t26",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the nearest electric vehicle charging stations in downtown."
+    },
+    {
+        "id": "cal_search_t27",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the latest SpaceX launch news and updates."
+    },
+    {
+        "id": "cal_search_t28",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up visa requirements for US citizens traveling to Japan."
+    },
+    {
+        "id": "cal_search_t29",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the top-rated books on Amazon about machine learning."
+    },
+    {
+        "id": "cal_search_t30",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the current air quality index in Beijing China."
+    },
+    {
+        "id": "cal_search_t31",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up job openings for software engineers at Google."
+    },
+    {
+        "id": "cal_search_t32",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the latest updates on the Mars rover mission."
+    },
+    {
+        "id": "cal_search_t33",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for free public WiFi spots in downtown Chicago."
+    },
+    {
+        "id": "cal_search_t34",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the cheapest car insurance options available right now."
+    },
+    {
+        "id": "cal_search_t35",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find the release date for the next Marvel movie."
+    },
+    {
+        "id": "cal_search_t36",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for statistics on global climate change trends for 2024."
+    },
+    {
+        "id": "cal_search_t37",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the latest firmware update for the Kindle Paperwhite."
+    },
+    {
+        "id": "cal_search_t38",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Find live streaming links for the Champions League final tonight."
+    },
+    {
+        "id": "cal_search_t39",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Search for the best coffee shops with free WiFi in Seattle."
+    },
+    {
+        "id": "cal_search_t40",
+        "domain": "search",
+        "label": 1,
+        "instruction": "Look up the current interest rates for 30-year fixed mortgage loans."
+    },
+    {
+        "id": "cal_search_n01",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is photosynthesis and how does the process work?"
+    },
+    {
+        "id": "cal_search_n02",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain the theory of relativity in simple terms?"
+    },
+    {
+        "id": "cal_search_n03",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What causes the four seasons on Earth?"
+    },
+    {
+        "id": "cal_search_n04",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the history of the Roman Empire."
+    },
+    {
+        "id": "cal_search_n05",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the meaning of life according to different philosophies?"
+    },
+    {
+        "id": "cal_search_n06",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the human digestive system work step by step?"
+    },
+    {
+        "id": "cal_search_n07",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the major differences between democracy and authoritarianism?"
+    },
+    {
+        "id": "cal_search_n08",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain how vaccines work to protect against diseases?"
+    },
+    {
+        "id": "cal_search_n09",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is dark matter and why is it invisible to us?"
+    },
+    {
+        "id": "cal_search_n10",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Industrial Revolution and its impacts on society."
+    },
+    {
+        "id": "cal_search_n11",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do airplanes fly from a physics perspective?"
+    },
+    {
+        "id": "cal_search_n12",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the key principles of Buddhism as a philosophy?"
+    },
+    {
+        "id": "cal_search_n13",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you describe how the internet works at a high level?"
+    },
+    {
+        "id": "cal_search_n14",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the greenhouse effect and how does it affect climate?"
+    },
+    {
+        "id": "cal_search_n15",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about famous painters like Monet and Van Gogh."
+    },
+    {
+        "id": "cal_search_n16",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do neural networks in the human brain process information?"
+    },
+    {
+        "id": "cal_search_n17",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the differences between classical and quantum physics?"
+    },
+    {
+        "id": "cal_search_n18",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain the water cycle in simple terms?"
+    },
+    {
+        "id": "cal_search_n19",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the significance of the Magna Carta in history?"
+    },
+    {
+        "id": "cal_search_n20",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does the stock market work in general terms?"
+    },
+    {
+        "id": "cal_search_n21",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the evolution of human language over time."
+    },
+    {
+        "id": "cal_search_n22",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are black holes and how are they formed in space?"
+    },
+    {
+        "id": "cal_search_n23",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain what DNA is and how it determines traits?"
+    },
+    {
+        "id": "cal_search_n24",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the difference between weather and climate?"
+    },
+    {
+        "id": "cal_search_n25",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Renaissance period in European history."
+    },
+    {
+        "id": "cal_search_n26",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How does electricity flow through a circuit?"
+    },
+    {
+        "id": "cal_search_n27",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the main causes of World War I?"
+    },
+    {
+        "id": "cal_search_n28",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain how the electoral college system works in the US?"
+    },
+    {
+        "id": "cal_search_n29",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the Big Bang theory about the origin of the universe?"
+    },
+    {
+        "id": "cal_search_n30",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about how the human immune system fights infections."
+    },
+    {
+        "id": "cal_search_n31",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do telescopes help us observe distant galaxies?"
+    },
+    {
+        "id": "cal_search_n32",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the ethical considerations of artificial intelligence?"
+    },
+    {
+        "id": "cal_search_n33",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain the concept of supply and demand in economics?"
+    },
+    {
+        "id": "cal_search_n34",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the difference between mitosis and meiosis?"
+    },
+    {
+        "id": "cal_search_n35",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about the Space Race between the US and Soviet Union."
+    },
+    {
+        "id": "cal_search_n36",
+        "domain": "search",
+        "label": 0,
+        "instruction": "How do plants adapt to different environmental conditions?"
+    },
+    {
+        "id": "cal_search_n37",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What are the major world religions and their core beliefs?"
+    },
+    {
+        "id": "cal_search_n38",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Can you explain how solar panels convert sunlight to electricity?"
+    },
+    {
+        "id": "cal_search_n39",
+        "domain": "search",
+        "label": 0,
+        "instruction": "What is the significance of the periodic table in chemistry?"
+    },
+    {
+        "id": "cal_search_n40",
+        "domain": "search",
+        "label": 0,
+        "instruction": "Tell me about famous explorers like Columbus and Magellan."
+    },
+    {
+        "id": "cal_trans_t01",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Good morning, how are you today?' to Spanish."
+    },
+    {
+        "id": "cal_trans_t02",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate the Japanese sentence '人工知能は未来を変えるでしょう' to English."
+    },
+    {
+        "id": "cal_trans_t03",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The weather is beautiful today' to French."
+    },
+    {
+        "id": "cal_trans_t04",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Ich liebe Programmierung und Technologie' from German to English."
+    },
+    {
+        "id": "cal_trans_t05",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Where is the nearest hospital?' to Mandarin Chinese."
+    },
+    {
+        "id": "cal_trans_t06",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '오늘 날씨가 정말 좋습니다' from Korean to English."
+    },
+    {
+        "id": "cal_trans_t07",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please help me find my passport' to Arabic."
+    },
+    {
+        "id": "cal_trans_t08",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'La vida es bella cuando sonríes' from Spanish to English."
+    },
+    {
+        "id": "cal_trans_t09",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I would like to order a coffee with milk' to Italian."
+    },
+    {
+        "id": "cal_trans_t10",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Bonjour, je voudrais réserver une table pour deux' from French to English."
+    },
+    {
+        "id": "cal_trans_t11",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The quick brown fox jumps over the lazy dog' to German."
+    },
+    {
+        "id": "cal_trans_t12",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '这个项目非常有趣' from Chinese to English."
+    },
+    {
+        "id": "cal_trans_t13",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Can you recommend a good restaurant nearby?' to Japanese."
+    },
+    {
+        "id": "cal_trans_t14",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Спасибо за вашу помощь' from Russian to English."
+    },
+    {
+        "id": "cal_trans_t15",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I need directions to the train station' to Korean."
+    },
+    {
+        "id": "cal_trans_t16",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Obrigado pela sua hospitalidade' from Portuguese to English."
+    },
+    {
+        "id": "cal_trans_t17",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The meeting has been rescheduled to next Monday' to French."
+    },
+    {
+        "id": "cal_trans_t18",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'مرحبا بكم في مدينتنا' from Arabic to English."
+    },
+    {
+        "id": "cal_trans_t19",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'My flight arrives at 3 PM tomorrow' to Spanish."
+    },
+    {
+        "id": "cal_trans_t20",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'プログラミングを学ぶのは楽しいです' from Japanese to English."
+    },
+    {
+        "id": "cal_trans_t21",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The museum closes at 5 PM on weekdays' to Chinese."
+    },
+    {
+        "id": "cal_trans_t22",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Buongiorno, come posso aiutarla?' from Italian to English."
+    },
+    {
+        "id": "cal_trans_t23",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I have a reservation under the name Smith' to German."
+    },
+    {
+        "id": "cal_trans_t24",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '이 제품의 가격은 얼마입니까?' from Korean to English."
+    },
+    {
+        "id": "cal_trans_t25",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The conference will be held in the main auditorium' to Arabic."
+    },
+    {
+        "id": "cal_trans_t26",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Вы говорите по-английски?' from Russian to English."
+    },
+    {
+        "id": "cal_trans_t27",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Please fasten your seatbelt during takeoff' to Japanese."
+    },
+    {
+        "id": "cal_trans_t28",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'El tren sale a las ocho de la mañana' from Spanish to English."
+    },
+    {
+        "id": "cal_trans_t29",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I am allergic to peanuts and shellfish' to French."
+    },
+    {
+        "id": "cal_trans_t30",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '我们需要更多的时间来完成这个任务' from Chinese to English."
+    },
+    {
+        "id": "cal_trans_t31",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The document needs to be signed by both parties' to Korean."
+    },
+    {
+        "id": "cal_trans_t32",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Die Präsentation beginnt um zehn Uhr' from German to English."
+    },
+    {
+        "id": "cal_trans_t33",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Could you please speak more slowly?' to Spanish."
+    },
+    {
+        "id": "cal_trans_t34",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Questa è la mia prima volta in Italia' from Italian to English."
+    },
+    {
+        "id": "cal_trans_t35",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The patient needs immediate medical attention' to Arabic."
+    },
+    {
+        "id": "cal_trans_t36",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'Мне нужно забронировать номер в гостинице' from Russian to English."
+    },
+    {
+        "id": "cal_trans_t37",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'I would like to cancel my subscription' to Japanese."
+    },
+    {
+        "id": "cal_trans_t38",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'O aeroporto está a trinta minutos daqui' from Portuguese to English."
+    },
+    {
+        "id": "cal_trans_t39",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate 'The deadline for the project is next Friday' to Chinese."
+    },
+    {
+        "id": "cal_trans_t40",
+        "domain": "translation",
+        "label": 1,
+        "instruction": "Translate '이 문서를 영어로 번역해 주세요' from Korean to English."
+    },
+    {
+        "id": "cal_trans_n01",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the most widely spoken languages in the world?"
+    },
+    {
+        "id": "cal_trans_n02",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How many official languages does the United Nations have?"
+    },
+    {
+        "id": "cal_trans_n03",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the history of the English language."
+    },
+    {
+        "id": "cal_trans_n04",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What makes Mandarin Chinese so difficult for English speakers to learn?"
+    },
+    {
+        "id": "cal_trans_n05",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How are sign languages different from spoken languages?"
+    },
+    {
+        "id": "cal_trans_n06",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the Rosetta Stone and why was it historically important?"
+    },
+    {
+        "id": "cal_trans_n07",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about endangered languages that might disappear soon."
+    },
+    {
+        "id": "cal_trans_n08",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do bilingual children develop their language skills?"
+    },
+    {
+        "id": "cal_trans_n09",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are cognates between Spanish and Portuguese languages?"
+    },
+    {
+        "id": "cal_trans_n10",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How did Latin influence modern European languages?"
+    },
+    {
+        "id": "cal_trans_n11",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the difference between a dialect and a language?"
+    },
+    {
+        "id": "cal_trans_n12",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Esperanto language and its original purpose."
+    },
+    {
+        "id": "cal_trans_n13",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What makes the Japanese writing system unique with kanji hiragana and katakana?"
+    },
+    {
+        "id": "cal_trans_n14",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How has the internet affected language evolution globally?"
+    },
+    {
+        "id": "cal_trans_n15",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are tonal languages and how do they work?"
+    },
+    {
+        "id": "cal_trans_n16",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about Arabic calligraphy and its cultural significance."
+    },
+    {
+        "id": "cal_trans_n17",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the most complex writing system in the world?"
+    },
+    {
+        "id": "cal_trans_n18",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do language families help us understand human migration patterns?"
+    },
+    {
+        "id": "cal_trans_n19",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is code-switching in multilingual communities?"
+    },
+    {
+        "id": "cal_trans_n20",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the differences between British and American English."
+    },
+    {
+        "id": "cal_trans_n21",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the Sapir-Whorf hypothesis about language and thought?"
+    },
+    {
+        "id": "cal_trans_n22",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How are new words invented and added to official dictionaries?"
+    },
+    {
+        "id": "cal_trans_n23",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the role of grammar in effective communication?"
+    },
+    {
+        "id": "cal_trans_n24",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about ancient Egyptian hieroglyphics and their decipherment."
+    },
+    {
+        "id": "cal_trans_n25",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do deaf communities develop their own sign languages?"
+    },
+    {
+        "id": "cal_trans_n26",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the cognitive benefits of learning multiple languages?"
+    },
+    {
+        "id": "cal_trans_n27",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the development of the Korean Hangul script by King Sejong."
+    },
+    {
+        "id": "cal_trans_n28",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Why do some languages have gendered nouns like French and Spanish?"
+    },
+    {
+        "id": "cal_trans_n29",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is linguistic relativity and how does it work?"
+    },
+    {
+        "id": "cal_trans_n30",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How has machine translation technology evolved over the decades?"
+    },
+    {
+        "id": "cal_trans_n31",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are the oldest known written languages in human history?"
+    },
+    {
+        "id": "cal_trans_n32",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about how pidgin and creole languages develop."
+    },
+    {
+        "id": "cal_trans_n33",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do children naturally acquire their first language?"
+    },
+    {
+        "id": "cal_trans_n34",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the difference between translation and interpretation professionally?"
+    },
+    {
+        "id": "cal_trans_n35",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the Celtic languages still spoken in Europe today."
+    },
+    {
+        "id": "cal_trans_n36",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Why do some languages like Arabic and Hebrew read right to left?"
+    },
+    {
+        "id": "cal_trans_n37",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What are language isolates and what makes them linguistically special?"
+    },
+    {
+        "id": "cal_trans_n38",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "How do languages borrow words from each other over time?"
+    },
+    {
+        "id": "cal_trans_n39",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "Tell me about the incredible linguistic diversity found in India."
+    },
+    {
+        "id": "cal_trans_n40",
+        "domain": "translation",
+        "label": 0,
+        "instruction": "What is the future of language in a globalized and connected world?"
+    }
+]
