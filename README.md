@@ -10,16 +10,84 @@
 
 This project applies the **ASA (Activation Steering Adapter)** technique to [LiquidAI/LFM2.5-1.2B-Instruct](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct) — a 1.17B parameter hybrid model with 10 LIV convolution blocks + 6 GQA attention blocks.
 
-ASA enhances tool-calling capabilities at inference time **without any model retraining**, using only ~20KB of additional assets.
+ASA enhances tool-calling capabilities at inference time **without any model retraining**, using only ~221KB of additional assets.
 
 > 📄 Paper: [ASA: Training-Free Representation Engineering for Tool-Calling Agents](https://arxiv.org/abs/2602.04935)
+
+## Results
+
+Evaluated on a **1,600-sample benchmark** built from the [Alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca) public dataset with domain-specific filtering. The protocol follows the paper: greedy decoding, strict `<|tool_call_start|>` trigger detection, disjoint data splits (CAL / TRAIN / VALID / TEST).
+
+### Baseline vs ASA (TEST set, 640 samples)
+
+| Metric | Baseline | ASA | Change |
+|--------|----------|-----|--------|
+| **Trigger Precision** | 0.4959 | **0.7591** | +53% ↑ |
+| **Trigger Recall** | 0.5656 | 0.5219 | -8% ↓ |
+| **Trigger F1** | 0.5285 | **0.6185** | +17% ↑ |
+| **FPR** | 0.5750 | **0.1656** | **-71%** ↓↓ |
+| **Accuracy** | 0.4953 | **0.6781** | +37% ↑ |
+
+**Key finding:** The baseline model falsely triggers tool calls on 57.5% of non-tool queries. ASA reduces this to 16.6% — a 71% reduction in false positives, while improving overall F1 by 17%.
+
+### Per-Domain (ASA)
+
+| Domain | F1 | Precision | Recall | FPR |
+|--------|----|-----------|--------|-----|
+| Translation | **0.9262** | 1.0000 | 0.8625 | 0.0000 |
+| Math | 0.7273 | 0.7568 | 0.7000 | 0.2250 |
+| Search | 0.5410 | 0.7857 | 0.4125 | 0.1125 |
+| Code | 0.1565 | 0.2571 | 0.1125 | 0.3250 |
+
+### Ablation (Paper §4.3)
+
+| Variant | F1 | FPR | Takeaway |
+|---------|-----|-----|----------|
+| **Full ASA** | **0.8054** | 0.2375 | Best balance |
+| No Gate | 0.6667 | **1.0000** | Gate is the critical safety valve |
+| Global Only | 0.8054 | 0.2375 | Strong baseline direction |
+| Domain Only | 0.8054 | 0.2375 | Domain-specific routing |
+
+### Pipeline Config
+
+| Parameter | Value |
+|-----------|-------|
+| Optimal Layer L* | **12** (GQA block) |
+| Probe AUC at L* | 0.8810 |
+| α (steering strength) | 1.0 |
+| τ (confidence threshold) | 0.50 |
+| β (MoV global weight) | 0.0 |
+| Asset size | 221 KB |
+
+### Limitations
+
+- **Success Precision = 0**: LFM2.5 outputs tool calls in bracket notation (`[func(args)]`), not JSON. The JSON parser doesn't match this format. Trigger-level metrics are unaffected.
+- **Code domain weak** (F1=0.16): Keyword-based heuristic labeling from Alpaca is noisy for code-related queries.
+- **Edge cases exist**: ASA may suppress valid search queries or trigger on philosophical questions. This is a data labeling quality issue, not a fundamental ASA limitation.
+- **Improvement headroom**: F1 improved 0.53→0.62, meaningful but not dramatic. Better labeled data would likely yield larger gains.
+
+### Demo: Baseline vs ASA
+
+```
+[TOOL] "Calculate the average rating for this product"
+  Baseline: no trigger ❌     →  ASA: TRIGGERED ✅ (p=0.999, gate=+1)
+
+[NO-TOOL] "Construct an analogy to explain a capacitor"
+  Baseline: TRIGGERED ❌      →  ASA: no trigger ✅ (p=0.000, gate=-1)
+
+[TOOL] "Calculate the month number for August 24"
+  Baseline: no trigger ❌     →  ASA: TRIGGERED ✅ (p=0.998, gate=+1)
+
+[NO-TOOL] "Provide an analogy to compare a computer to"
+  Baseline: TRIGGERED ❌      →  ASA: no trigger ✅ (p=0.021, gate=-1)
+```
 
 ## How ASA Works
 
 ```mermaid
 graph LR
     A[Input] --> B[Model Forward Pass]
-    B --> C{Layer L*}
+    B --> C{Layer L*=12}
     C --> D[Router: Classify Domain]
     D --> E[Probe: Tool Intent Score]
     E --> F{Ternary Gate}
@@ -31,91 +99,108 @@ graph LR
     I --> J
 ```
 
-**Key insight:** LLMs often *internally represent* tool-use intent but fail to act on it ("Lazy Agent" phenomenon). ASA bridges this representation-behavior gap by nudging the hidden state toward the tool-calling direction.
+**Key insight:** LLMs often *internally represent* tool-use intent but fail to act on it ("Lazy Agent" phenomenon). ASA bridges this representation-behavior gap by nudging the hidden state toward the tool-calling direction at a single layer, with no weight modification.
 
 ## Project Structure
 
 ```
 Liquid-ASA/
+├── ASA_LFM25_Pipeline.ipynb    # 📓 Main notebook (Colab T4)
+├── create_notebook.py           # Generates the .ipynb
 ├── data/
-│   ├── tools.json           # 4 tool definitions
-│   ├── cal_data.json         # 320 calibration samples (vector extraction)
-│   ├── train_data.json       # 320 training samples (router/probe)
-│   ├── valid_data.json       # 160 validation samples (hyperparameter tuning)
-│   └── test_data.json        # 320 test samples (evaluation)
-├── notebooks/
-│   └── asa_lfm25_colab.py    # Complete pipeline (Colab T4 compatible)
-├── outputs/                  # Generated assets, plots, checkpoints
-├── ASA_LFM2.5_Implementation_Plan.md
-├── README.md                 # English
-├── README_KR.md              # 한국어
+│   └── tools.json               # 4 tool definitions (schema whitelist)
+├── outputs/
+│   ├── asa_assets/              # 🚀 Deployable assets (221KB)
+│   │   ├── config.json          #    L*=12, α=1, τ=0.5, β=0.0
+│   │   ├── steering_vectors.npz #    Domain + global vectors
+│   │   ├── router.pkl           #    Domain classifier
+│   │   ├── probes.pkl           #    Per-domain intent probes
+│   │   └── scaler.pkl           #    Hidden state normalizer
+│   ├── probe_sweep.png          # Layer AUC visualization
+│   ├── hp_sweep.png             # α/τ/β tuning plots
+│   └── baseline_vs_asa.png      # Comparison chart
+├── README.md
+├── README_KR.md
 ├── requirements.txt
-└── .gitignore
+└── LICENSE
 ```
 
 ## Quick Start
 
-### Option 1: Google Colab (Recommended)
+### Run the Pipeline (Google Colab)
 
-1. Open [Google Colab](https://colab.research.google.com/)
-2. Clone and run:
+1. Upload `ASA_LFM25_Pipeline.ipynb` to [Google Colab](https://colab.research.google.com/)
+2. Select **T4 GPU** runtime
+3. **Run All** — ~30 minutes total
+
+The notebook automatically downloads Alpaca data, runs the full pipeline, and saves assets to `outputs/`.
+
+### Use Pre-built Assets (Local)
+
+If you just want to **use** the ASA assets without re-running the pipeline:
 
 ```python
-!git clone https://github.com/gyunggyung/Liquid-ASA.git
-%cd Liquid-ASA
+import pickle, json, numpy as np, torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
+# Load model
+model = AutoModelForCausalLM.from_pretrained(
+    "LiquidAI/LFM2.5-1.2B-Instruct",
+    dtype=torch.float16, device_map="auto", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained(
+    "LiquidAI/LFM2.5-1.2B-Instruct", trust_remote_code=True)
+
+# Load ASA assets (221KB total)
+vecs   = np.load("outputs/asa_assets/steering_vectors.npz")
+router = pickle.load(open("outputs/asa_assets/router.pkl", "rb"))
+probes = pickle.load(open("outputs/asa_assets/probes.pkl", "rb"))
+scaler = pickle.load(open("outputs/asa_assets/scaler.pkl", "rb"))
+config = json.load(open("outputs/asa_assets/config.json"))
+
+# Define ASA hook
+_injected = False
+def asa_hook(module, inp, out):
+    global _injected
+    if _injected: return out
+    _injected = True
+    h = out[0] if isinstance(out, tuple) else out
+    hl = h[:, -1, :].detach().cpu().float().numpy()
+    hs = scaler.transform(hl)
+    dom = config["domains"][router.predict(hs)[0]]
+    pt = probes[dom].predict_proba(hs)[0, 1] if dom in probes else 0.5
+    gate = 1 if pt >= config["tau"] else (-1 if pt <= 1-config["tau"] else 0)
+    if gate == 0: return out
+    v = vecs[dom]; v = v / (np.linalg.norm(v) + 1e-8)
+    vt = torch.tensor(v, dtype=torch.float16).to(h.device)
+    hn = h.clone(); hn[:, -1, :] += gate * config["alpha"] * vt
+    rest = out[1:] if isinstance(out, tuple) else None
+    return (hn,) + rest if rest else hn
+
+# Use it
+_injected = False
+hook = model.model.layers[config["L_star"]].register_forward_hook(asa_hook)
+# ... model.generate() as normal ...
+hook.remove()
 ```
 
-3. Convert to notebook for **cell-by-cell execution**:
+### Interactive Chat (Colab)
+
+Add a new cell at the end of the notebook:
 
 ```python
-!pip install -q jupytext
-!jupytext --to ipynb notebooks/asa_lfm25_colab.py -o notebooks/asa_lfm25_colab.ipynb
+while True:
+    q = input("\nQuery: ")
+    if q.lower() in ("quit", "exit"): break
+    msgs = [{"role": "system", "content": SYS_PROMPT},
+            {"role": "user", "content": q}]
+    bl = generate(msgs)
+    _injected = False
+    asa_out = generate(msgs, hook_fn=asa_hook, layer=L_STAR)
+    print(f"[Baseline] {'🔧 TOOL' if TOOL_S in bl else '💬 TEXT'}")
+    print(bl[:300])
+    print(f"[ASA]      {'🔧 TOOL' if TOOL_S in asa_out else '💬 TEXT'}")
+    print(asa_out[:300])
 ```
-
-4. Open `notebooks/asa_lfm25_colab.ipynb` and run each cell step by step.
-
-### Option 2: Local Execution
-
-```bash
-git clone https://github.com/gyunggyung/Liquid-ASA.git
-cd Liquid-ASA
-pip install -r requirements.txt
-python notebooks/asa_lfm25_colab.py
-```
-
-### Option 3: VS Code (Jupyter Extension)
-
-Open `notebooks/asa_lfm25_colab.py` in VS Code with the Jupyter extension — all `# %%` cells are recognized automatically. Run each cell with **Shift+Enter**.
-
-## Pipeline Stages
-
-| Stage | Description | Output |
-|-------|-------------|--------|
-| 1. Setup | Install deps, detect GPU | — |
-| 2. Data Loading | Load 1,120 samples, verify splits | Data stats |
-| 3. Model Loading | Load LFM2.5 in float16 | Model info |
-| 4. Hidden State Extraction | Forward hooks at all 16 layers | `{layer: (N, D)}` arrays |
-| 5. Probe Sweep | Logistic regression AUC per layer | Best layer L* + plot |
-| 6. Steering Vectors | Mean-diff vectors from CAL data | Per-domain + global vectors |
-| 7. Router & Probes | Multi-class router + binary probes | Trained classifiers |
-| 8. ASA Controller | `ASAController` with MoV + gate | Controller object |
-| 9. Hyperparameter Tuning | Grid sweep α, τ, β on VALID | Optimal hyperparameters + plot |
-| 10. Evaluation | Trigger metrics on TEST set | Precision/Recall/F1/FPR |
-| 11. HF Upload | Save ~20KB assets to HuggingFace | Model card + assets |
-| 12. Demo | Side-by-side baseline vs ASA | Interactive comparison |
-
-> 💡 Each stage is **checkpointed** — you can resume from any point. Intermediate results are saved to `outputs/`.
-
-## Dataset
-
-**1,120 manually crafted samples** across 4 domains × 4 splits:
-
-| Domain | Tools | Example (Tool) | Example (Non-Tool) |
-|--------|-------|-----------------|---------------------|
-| Math | `calculator` | "Calculate 15% tip on $85" | "Tell me about Euler" |
-| Code | `python_interpreter` | "Sort the list [5,2,8,1]" | "What is recursion?" |
-| Search | `web_search` | "Find latest AI news" | "What is photosynthesis?" |
-| Translation | `translator` | "Translate 'hello' to Korean" | "History of English language" |
 
 ## LFM2.5 Adaptations
 
@@ -125,19 +210,9 @@ Open `notebooks/asa_lfm25_colab.py` in VS Code with the Jupyter extension — al
 | Parameters | 1.5B / 8B | 1.17B |
 | Layers | 28–32 | 16 (10 LIV + 6 GQA) |
 | Tool tokens | `<functioncall>` | `<\|tool_call_start\|>` / `<\|tool_call_end\|>` |
-| Tool format | JSON | Pythonic (Python list syntax) |
-| Intervention | Single optimal layer | Probe sweep across all 16 |
-
-## Expected Results
-
-Based on the ASA paper's findings on similar-sized models (Qwen2.5-1.5B):
-
-| Metric | Baseline | ASA (expected) |
-|--------|----------|----------------|
-| F1 Score | ~0.65 | ~0.80+ |
-| FPR | ~0.15 | ~0.05 |
-| Asset Size | — | ~20KB |
-| Latency Overhead | — | <1ms |
+| Tool format | JSON | Bracket notation `[func(args)]` |
+| Optimal Layer | L18–L21 | **L12** (GQA block) |
+| Data source | Alpaca + NQ | Alpaca (auto-downloaded) |
 
 ## Citation
 

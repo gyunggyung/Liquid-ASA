@@ -15,7 +15,6 @@ env/
 .env/
 
 # Jupyter
-# Jupyter checkpoints (not notebooks themselves)
 .ipynb_checkpoints/
 
 # IDE
@@ -30,13 +29,13 @@ env/
 Thumbs.db
 desktop.ini
 
-# Outputs & checkpoints
-outputs/
-checkpoints/
-*.pkl
-*.npz
+# Checkpoints (hidden state caches — 200MB+, regenerated at runtime)
+outputs/ckpt/
+
+# Model weights
 *.pt
 *.bin
+*.safetensors
 
 # HuggingFace cache
 .cache/
@@ -50,7 +49,8 @@ wandb/
 *.key
 token.txt
 
-# Gemini
+# Temporary / internal
 Gemini.txt
 ASA_LFM2.5_Implementation_Plan.md
 Agent.md
+verify_nb.py
