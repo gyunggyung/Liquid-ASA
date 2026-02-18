@@ -52,5 +52,8 @@ token.txt
 # Temporary / internal
 Gemini.txt
 ASA_LFM2.5_Implementation_Plan.md
+ASA_Maxime_Feedback_Analysis.md
+verify_nb.py
+
 Agent.md
 verify_nb.py
