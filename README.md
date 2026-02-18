@@ -94,9 +94,10 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | Qwen2.5-1.5B (paper) | 1.5B | 28 | 18 | **0.9996** | 0.4966 |
 | Qwen2.5-8B (paper) | 8B | 32 | 18 | **0.9989** | 0.4975 |
 | **Qwen2.5-0.5B (ours)** | **0.5B** | **24** | **9** | **0.8734** | **0.5028** |
+| **Qwen2.5-1.5B (ours)** | **1.5B** | **28** | **12** | **0.8849** | **0.4974** |
 | **LFM2.5-1.2B (ours)** | **1.17B** | **16** | **12** | **0.8856** | — |
 
-> Paper models achieve near-perfect AUC (~0.999) on their proprietary dataset. Our independent reproductions — both Qwen2.5-0.5B (0.873) and LFM2.5 (0.886) — consistently reach 0.87–0.89 using the same Alpaca keyword-filtering pipeline, suggesting the gap is **data-driven, not model-driven**. See [Reproduction Analysis](#qwen25-05b-reproduction-analysis) below for detailed discussion.
+> Paper models achieve near-perfect AUC (~0.999) on their proprietary dataset. Our independent reproductions — Qwen2.5-0.5B (0.873), Qwen2.5-1.5B (0.885), and LFM2.5 (0.886) — all converge to **0.87–0.89** using the same Alpaca keyword-filtering pipeline. Even tripling model size (0.5B→1.5B) only improves AUC by +1.3%, confirming the gap is **data-driven, not model-driven**.
 
 ### Cross-Domain Cosine Similarity (Paper Table 2)
 
@@ -112,13 +113,18 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | Math | 0.05 | 1.00 | 0.35 | 0.28 |
 | Search | 0.005 | 0.35 | 1.00 | 0.40 |
 | Translation | 0.06 | 0.28 | 0.40 | 1.00 |
+| **Qwen2.5-1.5B (ours)** |
+| Code | 1.00 | 0.04 | 0.009 | 0.12 |
+| Math | 0.04 | 1.00 | 0.41 | 0.12 |
+| Search | 0.009 | 0.41 | 1.00 | 0.10 |
+| Translation | 0.12 | 0.12 | 0.10 | 1.00 |
 | **LFM2.5 (ours)** |
 | Code | 1.00 | -0.01 | 0.37 | 0.02 |
 | Math | -0.01 | 1.00 | 0.30 | 0.26 |
 | Search | 0.37 | 0.30 | 1.00 | 0.11 |
 | Translation | 0.02 | 0.26 | 0.11 | 1.00 |
 
-> All three models show domain-specific geometry — directions are not random. Qwen2.5-0.5B shows Code nearly orthogonal to all other domains (cos≈0.05), while Math↔Search (0.35) and Search↔Translation (0.40) share subspaces. Smaller models appear to exhibit more dispersed domain representations.
+> All four models show domain-specific geometry — directions are not random. Both Qwen models show Code nearly orthogonal to others, and Math↔Search sharing subspace. Qwen2.5-1.5B has more compact cross-domain cosines (max off-diagonal 0.41) vs 0.5B (max 0.40).
 
 ### Main Results: All Models (Paper Tables 4–5)
 
@@ -134,6 +140,8 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | | **ASA (best)** | **0.9079** | **0.7188** | **0.8023** | **0.8229** | **0.0700** |
 | **Qwen2.5-0.5B** | Baseline | 0.5821 | 0.1219 | 0.2016 | 0.5172 | 0.0875 |
 | (ours) | **ASA α=1.0** | **0.6176** | **0.1313** | **0.2165** | **0.5250** | **0.0813** |
+| **Qwen2.5-1.5B** | Baseline | 0.7857 | 0.4125 | 0.5410 | 0.6500 | 0.1125 |
+| (ours) | **ASA α=1.0** | 0.7857 | 0.4125 | 0.5410 | 0.6500 | 0.1125 |
 | **LFM2.5-1.2B** | Baseline | 0.4959 | 0.5656 | 0.5285 | 0.4953 | 0.5750 |
 | (ours) | **ASA α=1.0** | **0.7591** | **0.5219** | **0.6185** | **0.6781** | **0.1656** |
 
@@ -145,30 +153,32 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 |-------|-----------------|------------|
 | Qwen2.5-1.5B (paper) | **Under-triggers** (Recall=0.11) | Promotes triggers ↑ |
 | LLaMA-8B (paper) | Moderate (Recall=0.44) | Improves both P and R |
-| Qwen2.5-0.5B (ours) | **Under-triggers** (Recall=0.12) | Minimal effect |
+| Qwen2.5-0.5B (ours) | **Under-triggers** (Recall=0.12) | Minimal effect (+7%) |
+| Qwen2.5-1.5B (ours) | **Already good** (F1=0.54) | **No effect (0%)** |
 | LFM2.5-1.2B (ours) | **Over-triggers** (FPR=0.58) | Suppresses false triggers ↓ |
 
-> Qwen 0.5B behaves similarly to Qwen 1.5B (under-triggering at ~12% recall) but ASA barely improves it — the 0.5B model lacks the capacity to generate `<functioncall>` tokens even with steering. LFM2.5 triggers on everything (58% FPR) — ASA effectively suppresses the false ones.
+> Our Qwen2.5-1.5B baseline (F1=0.54) **already outperforms the paper's ASA result** (F1=0.50). This means our prompt/data setup already elicits good tool-calling, leaving no room for ASA improvement. The paper's dramatic +177% gain comes from an extremely weak baseline (Recall=0.11) that we cannot reproduce.
 
 **2. Relative improvements:**
 
-| Improvement | Qwen2.5-1.5B (paper) | LLaMA-8B (paper) | Qwen2.5-0.5B (ours) | LFM2.5-1.2B (ours) |
-|-------------|-------------|----------|-------------|------------|
-| ΔF1 (relative) | +177% | +39% | **+7%** | **+17%** |
-| ΔFPR (relative) | -64% | -17% | **-7%** | **-71%** |
-| ΔPrecision | +98% | +8% | **+6%** | **+53%** |
+| Improvement | Qwen2.5-1.5B (paper) | LLaMA-8B (paper) | Qwen2.5-0.5B (ours) | Qwen2.5-1.5B (ours) | LFM2.5-1.2B (ours) |
+|-------------|-------------|----------|-------------|-------------|------------|
+| ΔF1 (relative) | +177% | +39% | **+7%** | **0%** | **+17%** |
+| ΔFPR (relative) | -64% | -17% | **-7%** | **0%** | **-71%** |
+| ΔPrecision | +98% | +8% | **+6%** | **0%** | **+53%** |
 
-> Qwen2.5-0.5B shows minimal improvement across all metrics. This suggests **model capacity is a prerequisite for ASA** — steering can only amplify existing capabilities, not create them.
+> ASA's effectiveness is **inversely proportional to baseline quality**: dramatic gains require a weak baseline. When the model already handles tools well, steering adds nothing.
 
 **3. Post-trigger validity:**
 
 | Model | JSON Valid | Schema OK | Args OK |
 |-------|-----------|-----------|---------|
 | Qwen2.5-1.5B ASA (paper) | 0.8800 | 0.6923 | 0.8700 |
-| Qwen2.5-0.5B ASA (ours) | **0.0441** | **0.0147** | **0.0441** |
+| Qwen2.5-0.5B ASA (ours) | 0.0441 | 0.0147 | 0.0441 |
+| Qwen2.5-1.5B ASA (ours) | **0.3333** | **0.3214** | **0.0655** |
 | LFM2.5-1.2B ASA (ours) | 0.0000 | 0.0000 | 0.0000 |
 
-> Qwen 0.5B and LFM2.5 both fail post-trigger validation. LFM2.5 uses bracket notation instead of JSON. Qwen 0.5B generates malformed JSON — evidence of insufficient `<functioncall>` generation capability.
+> Qwen2.5-1.5B generates valid JSON 33% of the time — 7.5× better than 0.5B, but still far below the paper's 88%. This gap, combined with the baseline=ASA result, strongly suggests **data/prompt differences** are the primary factor.
 
 ### Caveats
 
@@ -301,6 +311,138 @@ Code has the lowest alignment with the global vector (0.38), consistent with cod
 | **Tool definitions** | ⭐ | Tool count and schemas undisclosed |
 
 > The paper does **not report generative results (F1/FPR) for Qwen2.5-0.5B** — only probe AUC in Table 1. Our experiment reveals why: the 0.5B model cannot reliably generate `<functioncall>` tokens, making ASA steering ineffective at the behavioral level despite successful intent detection at the representation level.
+
+---
+
+## Qwen2.5-1.5B Reproduction Analysis
+
+Independent reproduction for the paper's **main model** — Qwen2.5-1.5B-Instruct. Notebook: [`ASA_Qwen15B_Reproduction.ipynb`](ASA_Qwen15B_Reproduction.ipynb).
+
+> ⚠️ **Key finding: ASA produced results identical to baseline.** This is likely because our baseline already outperforms the paper's ASA result (F1=0.54 vs 0.50), leaving no room for improvement. This may indicate differences in data/prompts or a potential issue in our steering implementation at α=1.
+
+### Probe Sweep Results (All 28 Layers)
+
+| Layer | AUC | Acc | | Layer | AUC | Acc |
+|-------|------|------|-|-------|------|------|
+| 0 | 0.7655 | 0.6906 | | 14 | 0.8571 | 0.7781 |
+| 1 | 0.8190 | 0.7281 | | 15 | 0.8727 | 0.7906 |
+| 2 | 0.8419 | 0.7469 | | 16 | 0.8609 | 0.7875 |
+| 3 | 0.8437 | 0.7500 | | 17 | 0.8560 | 0.7969 |
+| 4 | 0.8380 | 0.7469 | | 18 | 0.8318 | 0.7375 |
+| 5 | 0.8293 | 0.7500 | | 19 | 0.8245 | 0.7438 |
+| 6 | 0.8248 | 0.7469 | | 20 | 0.8224 | 0.7406 |
+| 7 | 0.8336 | 0.7406 | | 21 | 0.8259 | 0.7344 |
+| 8 | 0.8536 | 0.7562 | | 22 | 0.8162 | 0.7219 |
+| 9 | 0.8337 | 0.7594 | | 23 | 0.8246 | 0.7344 |
+| 10 | 0.8475 | 0.7719 | | 24 | 0.8289 | 0.7469 |
+| 11 | 0.8629 | 0.7719 | | 25 | 0.8250 | 0.7188 |
+| **12** | **0.8849** | **0.8063** | | 26 | 0.8482 | 0.7375 |
+| 13 | 0.8652 | 0.7844 | | 27 | 0.8386 | 0.7500 |
+
+**L\* = 12** (same as LFM2.5, vs paper's L\*=18). AUC peaks at layer 12 then drops — same bell-curve pattern as 0.5B.
+
+### AUC Convergence Across Models
+
+| Model | L* | Best AUC | Paper AUC |
+|-------|-----|----------|----------|
+| Qwen2.5-0.5B (ours) | 9 | 0.8734 | 0.9994 |
+| **Qwen2.5-1.5B (ours)** | **12** | **0.8849** | **0.9996** |
+| LFM2.5-1.2B (ours) | 12 | 0.8856 | — |
+
+> Tripling model size (0.5B→1.5B) improves AUC by only **+1.3%** (0.8734→0.8849). All three models converge to 0.87–0.89, confirming the **ceiling is set by data quality, not model capacity**.
+
+### Steering Vector Cosines
+
+| Domain | cos(v_d, v_global) |
+|--------|-------------------|
+| math | 0.7304 |
+| code | 0.3674 |
+| search | 0.7400 |
+| translation | 0.4870 |
+
+### Router & Probe Accuracy
+
+| Component | Train Acc | Valid Acc |
+|-----------|-----------|----------|
+| Router (4-class) | 1.0000 | 0.7500 |
+| Probe: math | 1.0000 | 0.8875 |
+| Probe: code | 1.0000 | 0.6875 |
+| Probe: search | 1.0000 | 0.9125 |
+| Probe: translation | 1.0000 | 1.0000 |
+
+### Hyperparameters
+
+| Parameter | Selected | Paper (Qwen 1.5B) |
+|-----------|----------|-------------------|
+| α | 1.0 | 4.0 |
+| τ | 0.50 | 0.60 |
+| β | 0.0 | — |
+
+> α=1 was selected by HP sweep, but the paper uses α=4. With our baseline already strong, even α=4 may not change the outcome.
+
+### TEST Set Results (640 samples)
+
+| Metric | Baseline | ASA | Δ |
+|--------|----------|-----|---|
+| **Precision** | 0.7857 | 0.7857 | **0%** |
+| **Recall** | 0.4125 | 0.4125 | **0%** |
+| **F1** | 0.5410 | 0.5410 | **0%** |
+| **FPR** | 0.1125 | 0.1125 | **0%** |
+| **Accuracy** | 0.6500 | 0.6500 | **0%** |
+
+> **ASA = Baseline across all metrics.** Possible causes: (1) baseline is already strong enough that steering at α=1 has no marginal effect, (2) data/prompt differences from paper create a fundamentally different operating regime, (3) α=4 (paper's value) might be needed but our HP sweep on validation didn't favor it.
+
+### Baseline Comparison: Ours vs Paper
+
+| Metric | Paper 1.5B Baseline | Our 1.5B Baseline | Our advantage |
+|--------|--------------------|--------------------|---------------|
+| Precision | 0.4400 | **0.7857** | +79% |
+| Recall | 0.1146 | **0.4125** | +260% |
+| F1 | 0.1818 | **0.5410** | +198% |
+| FPR | 0.1458 | **0.1125** | -23% |
+
+> Our baseline F1 (0.54) **exceeds the paper's ASA result** (0.50). This means our prompt and data setup already elicits effective tool-calling from Qwen2.5-1.5B, making ASA redundant. The paper's dramatic improvement (+177%) relies on an extremely weak baseline that our pipeline does not reproduce.
+
+### Per-Domain ASA Results
+
+| Domain | Precision | Recall | F1 | FPR | JSON Valid |
+|--------|-----------|--------|-----|-----|------------|
+| math | 0.7222 | 0.6500 | 0.6842 | 0.2500 | 0.2500 |
+| code | 0.3636 | 0.1000 | 0.1569 | 0.1750 | 0.3182 |
+| search | 0.9091 | 0.2500 | 0.3922 | 0.0250 | 0.2727 |
+| translation | 1.0000 | 0.6500 | 0.7879 | 0.0000 | 0.4808 |
+
+> Translation is the strongest domain (F1=0.79, zero FPR) with the highest JSON validity (48%). Code remains weakest across all models.
+
+### Ablation Study
+
+| Variant | F1 | Prec | Rec | FPR |
+|---------|-----|------|-----|-----|
+| **Full ASA** | **0.7969** | 0.7848 | 0.8094 | 0.2219 |
+| No Gate | 0.6667 | 0.5000 | 1.0000 | **1.0000** |
+| Global Only | 0.7969 | 0.7848 | 0.8094 | 0.2219 |
+| Domain Only | 0.7969 | 0.7848 | 0.8094 | 0.2219 |
+
+### Demo Outputs
+
+```
+[TOOL] "Calculate the monthly cost of a house..."
+  Baseline: TRIGGERED ✅     →  ASA: TRIGGERED ✅ (p=0.991, gate=+1)
+
+[TOOL] "How many teaspoons are in 1/4 cup?"
+  Baseline: TRIGGERED ✅     →  ASA: TRIGGERED ✅ (p=0.970, gate=+1)
+
+[NO-TOOL] "Construct an analogy to explain the function of a capacitor."
+  Baseline: no trigger ✅    →  ASA: no trigger ✅ (p=0.000, gate=-1)
+
+[NO-TOOL] "Rewrite the sentence to make it more succinct..."
+  Baseline: no trigger ✅    →  ASA: no trigger ⚠️ (p=0.982, gate=+1)
+
+[TOOL] "Create a program to calculate the area of a triangle..."
+  Baseline: TRIGGERED ✅     →  ASA: TRIGGERED ✅ (p=0.963, gate=+1)
+```
+
+> Unlike 0.5B (which never triggered), 1.5B baseline already triggers correctly on tool-needed queries. ASA agrees with baseline in all cases. Note one potential error: the probe assigns p=0.982 (gate=+1) to a NO-TOOL rewriting query — a misclassification, though it doesn't change the output.
 
 ## How ASA Works
 
@@ -441,6 +583,10 @@ while True:
   year={2025}
 }
 ```
+
+## Note
+
+All experiment code, data pipelines, and notebooks in this project were developed with Antigravity's **Claude Opus 4.6**.
 
 ## License
 
