@@ -90,12 +90,13 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 
 | Model | Params | Layers | L* | AUC | Shuffle AUC |
 |-------|--------|--------|-----|-----|-------------|
-| Qwen2.5-0.5B | 0.5B | 24 | 18 | **0.9994** | 0.4982 |
-| Qwen2.5-1.5B | 1.5B | 28 | 18 | **0.9996** | 0.4966 |
-| Qwen2.5-8B | 8B | 32 | 18 | **0.9989** | 0.4975 |
+| Qwen2.5-0.5B (paper) | 0.5B | 24 | 18 | **0.9994** | 0.4982 |
+| Qwen2.5-1.5B (paper) | 1.5B | 28 | 18 | **0.9996** | 0.4966 |
+| Qwen2.5-8B (paper) | 8B | 32 | 18 | **0.9989** | 0.4975 |
+| **Qwen2.5-0.5B (ours)** | **0.5B** | **24** | **9** | **0.8734** | **0.5028** |
 | **LFM2.5-1.2B (ours)** | **1.17B** | **16** | **12** | **0.8856** | — |
 
-> Paper models achieve near-perfect AUC (~0.999) on their dataset. Our LFM2.5 reaches 0.886 — lower, but realistic. This could be due to: (1) different data labeling methodology, (2) Alpaca keyword-heuristic labels vs paper's potentially cleaner labels, (3) fundamental architectural differences (hybrid LIV+GQA vs pure Transformer).
+> Paper models achieve near-perfect AUC (~0.999) on their proprietary dataset. Our independent reproductions — both Qwen2.5-0.5B (0.873) and LFM2.5 (0.886) — consistently reach 0.87–0.89 using the same Alpaca keyword-filtering pipeline, suggesting the gap is **data-driven, not model-driven**. See [Reproduction Analysis](#qwen25-05b-reproduction-analysis) below for detailed discussion.
 
 ### Cross-Domain Cosine Similarity (Paper Table 2)
 
@@ -106,26 +107,33 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | Math | 0.17 | 1.00 | 0.29 | 0.11 |
 | Search | 0.37 | 0.29 | 1.00 | 0.03 |
 | Translation | 0.42 | 0.11 | 0.03 | 1.00 |
+| **Qwen2.5-0.5B (ours)** |
+| Code | 1.00 | 0.05 | 0.005 | 0.06 |
+| Math | 0.05 | 1.00 | 0.35 | 0.28 |
+| Search | 0.005 | 0.35 | 1.00 | 0.40 |
+| Translation | 0.06 | 0.28 | 0.40 | 1.00 |
 | **LFM2.5 (ours)** |
 | Code | 1.00 | -0.01 | 0.37 | 0.02 |
 | Math | -0.01 | 1.00 | 0.30 | 0.26 |
 | Search | 0.37 | 0.30 | 1.00 | 0.11 |
 | Translation | 0.02 | 0.26 | 0.11 | 1.00 |
 
-> Both models show domain-specific geometry — directions are not random. Code↔Search similarity is 0.37 in both, suggesting a shared retrieval/execution subspace. LFM2.5 shows stronger Code↔Math orthogonality (-0.01 vs 0.17).
+> All three models show domain-specific geometry — directions are not random. Qwen2.5-0.5B shows Code nearly orthogonal to all other domains (cos≈0.05), while Math↔Search (0.35) and Search↔Translation (0.40) share subspaces. Smaller models appear to exhibit more dispersed domain representations.
 
 ### Main Results: All Models (Paper Tables 4–5)
 
 | Model | Method | Prec | Rec | **F1** | Acc | **FPR** |
 |-------|--------|------|-----|--------|-----|---------|
 | **Qwen2.5-1.5B** | Baseline | 0.4400 | 0.1146 | 0.1818 | 0.4844 | 0.1458 |
-| | Prompt (few-shot) | 0.4348 | 0.2083 | 0.2817 | — | 0.2708 |
+| (paper) | Prompt (few-shot) | 0.4348 | 0.2083 | 0.2817 | — | 0.2708 |
 | | LoRA (rank-16) | 0.5600 | 0.5833 | 0.5714 | — | 0.4583 |
 | | Q-LoRA | 0.7328 | 0.3154 | 0.4696 | — | 0.1193 |
 | | **ASA α=4.0** | **0.8718** | **0.3542** | **0.5037** | **0.6510** | **0.0521** |
 | **LLaMA-8B** | Baseline | 0.8407 | 0.4378 | 0.5759 | 0.6779 | 0.0839 |
-| | Prompt-only | 0.8627 | 0.4988 | 0.6238 | 0.7159 | 0.0829 |
+| (paper) | Prompt-only | 0.8627 | 0.4988 | 0.6238 | 0.7159 | 0.0829 |
 | | **ASA (best)** | **0.9079** | **0.7188** | **0.8023** | **0.8229** | **0.0700** |
+| **Qwen2.5-0.5B** | Baseline | 0.5821 | 0.1219 | 0.2016 | 0.5172 | 0.0875 |
+| (ours) | **ASA α=1.0** | **0.6176** | **0.1313** | **0.2165** | **0.5250** | **0.0813** |
 | **LFM2.5-1.2B** | Baseline | 0.4959 | 0.5656 | 0.5285 | 0.4953 | 0.5750 |
 | (ours) | **ASA α=1.0** | **0.7591** | **0.5219** | **0.6185** | **0.6781** | **0.1656** |
 
@@ -135,37 +143,164 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 
 | Model | Baseline Problem | ASA Effect |
 |-------|-----------------|------------|
-| Qwen2.5-1.5B | **Under-triggers** (Recall=0.11) | Promotes triggers ↑ |
-| LLaMA-8B | Moderate (Recall=0.44) | Improves both P and R |
-| LFM2.5-1.2B | **Over-triggers** (FPR=0.58) | Suppresses false triggers ↓ |
+| Qwen2.5-1.5B (paper) | **Under-triggers** (Recall=0.11) | Promotes triggers ↑ |
+| LLaMA-8B (paper) | Moderate (Recall=0.44) | Improves both P and R |
+| Qwen2.5-0.5B (ours) | **Under-triggers** (Recall=0.12) | Minimal effect |
+| LFM2.5-1.2B (ours) | **Over-triggers** (FPR=0.58) | Suppresses false triggers ↓ |
 
-> Qwen barely calls tools at all (11% recall) — ASA pushes it to trigger more. LFM2.5 triggers on everything (58% FPR) — ASA suppresses the false ones. This shows **ASA works bidirectionally**: both promoting and suppressing, depending on the model's baseline behavior.
+> Qwen 0.5B behaves similarly to Qwen 1.5B (under-triggering at ~12% recall) but ASA barely improves it — the 0.5B model lacks the capacity to generate `<functioncall>` tokens even with steering. LFM2.5 triggers on everything (58% FPR) — ASA effectively suppresses the false ones.
 
 **2. Relative improvements:**
 
-| Improvement | Qwen2.5-1.5B | LLaMA-8B | LFM2.5-1.2B |
-|-------------|-------------|----------|-------------|
-| ΔF1 (relative) | +177% | +39% | **+17%** |
-| ΔFPR (relative) | -64% | -17% | **-71%** |
-| ΔPrecision | +98% | +8% | **+53%** |
+| Improvement | Qwen2.5-1.5B (paper) | LLaMA-8B (paper) | Qwen2.5-0.5B (ours) | LFM2.5-1.2B (ours) |
+|-------------|-------------|----------|-------------|------------|
+| ΔF1 (relative) | +177% | +39% | **+7%** | **+17%** |
+| ΔFPR (relative) | -64% | -17% | **-7%** | **-71%** |
+| ΔPrecision | +98% | +8% | **+6%** | **+53%** |
 
-> LFM2.5 shows the **strongest FPR reduction** (-71%) of all three models, but more modest F1 improvement (+17%). This is because its baseline F1 is already higher (0.53 vs Qwen's 0.18), leaving less headroom.
+> Qwen2.5-0.5B shows minimal improvement across all metrics. This suggests **model capacity is a prerequisite for ASA** — steering can only amplify existing capabilities, not create them.
 
 **3. Post-trigger validity:**
 
-| Model | Format | Exec Prec | Args |
-|-------|--------|-----------|------|
-| Qwen2.5-1.5B (ASA) | 0.8800 | 0.6923 | 0.8700 |
-| LFM2.5-1.2B (ASA) | **0.0000** | **0.0000** | **0.0000** |
+| Model | JSON Valid | Schema OK | Args OK |
+|-------|-----------|-----------|---------|
+| Qwen2.5-1.5B ASA (paper) | 0.8800 | 0.6923 | 0.8700 |
+| Qwen2.5-0.5B ASA (ours) | **0.0441** | **0.0147** | **0.0441** |
+| LFM2.5-1.2B ASA (ours) | 0.0000 | 0.0000 | 0.0000 |
 
-> LFM2.5 outputs tool calls in bracket format `[func(args)]` instead of JSON, so the JSON validator reports 0. This is a **parser format mismatch**, not an ASA failure. Trigger-level metrics (P/R/F1/FPR) are valid and unaffected.
+> Qwen 0.5B and LFM2.5 both fail post-trigger validation. LFM2.5 uses bracket notation instead of JSON. Qwen 0.5B generates malformed JSON — evidence of insufficient `<functioncall>` generation capability.
 
 ### Caveats
 
-- **Data differences**: Paper likely used a more carefully curated dataset with clean labels. Our Alpaca keyword-heuristic labeling introduces noise, which limits probe performance (AUC 0.89 vs 0.999).
-- **Experimental methodology**: Paper's code is not fully open-sourced. Implementation details (exact filtering rules, system prompt format, tokenizer settings) may differ.
-- **Model architecture**: LFM2.5 is the first non-Transformer model tested with ASA. The hybrid LIV+GQA architecture processes information differently, and the optimal intervention point (L12 vs L18) reflects this.
+- **Data differences**: Paper uses proprietary datasets (REST/MOV/CAL) built from Alpaca + Natural Questions with undisclosed filtering rules. Our Alpaca-only keyword-heuristic labeling introduces noise (AUC 0.87 vs 0.999).
+- **Code not open-sourced**: Paper's preprocessing, system prompts, and exact protocol are not publicly available, making faithful reproduction impossible.
+- **Model architecture**: LFM2.5 is the first non-Transformer model tested with ASA. The hybrid LIV+GQA architecture processes information differently.
 - **α sensitivity**: LFM2.5 is more sensitive to steering (α=1 vs paper's α=4), suggesting the hybrid architecture amplifies activation perturbations.
+- **Model capacity**: Qwen2.5-0.5B lacks tool-calling generation capacity — ASA cannot create capability that doesn't exist.
+
+---
+
+## Qwen2.5-0.5B Reproduction Analysis
+
+Independent reproduction of [ASA paper](https://arxiv.org/abs/2602.04935) Table 1 results for **Qwen2.5-0.5B-Instruct** using the same Alpaca filtering pipeline as LFM2.5. Notebook: [`ASA_Qwen05B_Reproduction.ipynb`](ASA_Qwen05B_Reproduction.ipynb).
+
+### Probe Sweep Results (All 24 Layers)
+
+| Layer | AUC | Acc | | Layer | AUC | Acc |
+|-------|------|------|-|-------|------|------|
+| 0 | 0.7484 | 0.7031 | | 12 | 0.8545 | 0.7969 |
+| 1 | 0.8130 | 0.7406 | | 13 | 0.8526 | 0.7875 |
+| 2 | 0.8345 | 0.7844 | | 14 | 0.8566 | 0.7906 |
+| 3 | 0.8182 | 0.7344 | | 15 | 0.8480 | 0.7937 |
+| 4 | 0.8677 | 0.7562 | | 16 | 0.8622 | 0.8031 |
+| 5 | 0.8699 | 0.7906 | | 17 | 0.8555 | 0.7844 |
+| 6 | 0.8674 | 0.7656 | | 18 | 0.8580 | 0.7875 |
+| 7 | 0.8586 | 0.7750 | | 19 | 0.8461 | 0.7594 |
+| 8 | 0.8607 | 0.7625 | | 20 | 0.8278 | 0.7531 |
+| **9** | **0.8734** | **0.8000** | | 21 | 0.8196 | 0.7375 |
+| 10 | 0.8600 | 0.7937 | | 22 | 0.8227 | 0.7562 |
+| 11 | 0.8596 | 0.7906 | | 23 | 0.8170 | 0.7594 |
+
+**L\* = 9** (mid-layer, vs paper's L\*=18). AUC peaks around layers 4–9 then gradually declines — a bell-curve pattern fundamentally different from the paper's near-flat 0.999 across all layers.
+
+### Steering Vector Cosines
+
+| Domain | cos(v_d, v_global) |
+|--------|-------------------|
+| math | 0.7097 |
+| code | 0.3755 |
+| search | 0.7326 |
+| translation | 0.6774 |
+
+Code has the lowest alignment with the global vector (0.38), consistent with code being the most semantically distinct domain.
+
+### Router & Probe Accuracy
+
+| Component | Train Acc | Valid Acc |
+|-----------|-----------|----------|
+| Router (4-class) | 1.0000 | 0.7219 |
+| Probe: math | 1.0000 | 0.9000 |
+| Probe: code | 1.0000 | 0.6875 |
+| Probe: search | 1.0000 | 0.9375 |
+| Probe: translation | 1.0000 | 1.0000 |
+
+> Router overfits (100% train → 72% valid). Code probe is weakest (69% valid acc), consistent with noisy Alpaca keyword labels for code-related queries.
+
+### Hyperparameter Tuning
+
+| Parameter | Selected | Paper (Qwen 1.5B) |
+|-----------|----------|-------------------|
+| α | 1.0 | 4.0 |
+| τ | 0.50 | 0.60 |
+| β | 0.0 | — |
+
+> All α values (1–20) produce identical F1=0.7732 on validation, indicating the hidden-state-level evaluation is already saturated before steering is applied. The steering strength α only matters during generative evaluation.
+
+### TEST Set Results (640 samples)
+
+| Metric | Baseline | ASA | Δ |
+|--------|----------|-----|---|
+| **Precision** | 0.5821 | **0.6176** | +6.1% |
+| **Recall** | 0.1219 | **0.1313** | +7.7% |
+| **F1** | 0.2016 | **0.2165** | +7.4% |
+| **FPR** | 0.0875 | **0.0813** | -7.1% |
+| **Accuracy** | 0.5172 | **0.5250** | +1.5% |
+
+### Per-Domain ASA Results
+
+| Domain | Precision | Recall | F1 | FPR |
+|--------|-----------|--------|-----|-----|
+| math | 0.5000 | 0.1875 | 0.2727 | 0.1875 |
+| code | 0.6000 | 0.1500 | 0.2400 | 0.1000 |
+| search | 0.8000 | 0.1500 | 0.2526 | 0.0375 |
+| translation | 1.0000 | 0.0375 | 0.0723 | 0.0000 |
+
+> Translation achieves perfect precision but near-zero recall — the 0.5B model almost never generates `<functioncall>` for translation queries, even with ASA steering.
+
+### Ablation Study
+
+| Variant | F1 | Prec | Rec | FPR |
+|---------|-----|------|-----|-----|
+| **Full ASA** | **0.7870** | 0.7774 | 0.7969 | 0.2281 |
+| No Gate | 0.6667 | 0.5000 | 1.0000 | **1.0000** |
+| Global Only | 0.7870 | 0.7774 | 0.7969 | 0.2281 |
+| Domain Only | 0.7870 | 0.7774 | 0.7969 | 0.2281 |
+
+> The gate is the critical component — without it (No Gate), FPR jumps to 100%. Global and domain-only variants perform identically, suggesting the global direction already captures most of the steering signal at this model scale.
+
+### Demo Outputs
+
+```
+[TOOL] "Calculate the monthly cost of a house..."
+  Baseline: no trigger     →  ASA: no trigger (p=0.995, gate=+1)
+
+[TOOL] "How many teaspoons are in 1/4 cup?"
+  Baseline: no trigger     →  ASA: no trigger (p=0.969, gate=+1)
+
+[NO-TOOL] "Construct an analogy to explain the function of a capacitor."
+  Baseline: no trigger     →  ASA: no trigger (p=0.000, gate=-1)
+
+[TOOL] "Create a program to calculate the area of a triangle..."
+  Baseline: no trigger     →  ASA: no trigger (p=1.000, gate=+1)
+
+[TOOL] "Calculate the average rating for this product..."
+  Baseline: no trigger     →  ASA: no trigger (p=0.998, gate=+1)
+```
+
+> The probe correctly identifies tool intent (p≈1.0 for tool, p≈0.0 for non-tool) and gates correctly (+1/-1), but **actual generation is unaffected**. This demonstrates the Representation-Behavior Gap from the paper (§B.1) — intent is decodable but doesn't manifest as behavior at this model scale.
+
+### Gap Analysis: Why Our Results Differ from Paper
+
+| Factor | Impact | Explanation |
+|--------|--------|-------------|
+| **Data (non-public)** | ⭐⭐⭐ | Paper uses proprietary REST/MOV/CAL datasets with `<functioncall>` marker validation; we use Alpaca keyword heuristics |
+| **Natural Questions** | ⭐⭐⭐ | Paper uses NQ for search domain; we use Alpaca only |
+| **Label validation** | ⭐⭐⭐ | Paper validates labels via model output markers → data optimized for the model |
+| **Model capacity** | ⭐⭐ | 0.5B may lack `<functioncall>` generation ability (paper only reports AUC for 0.5B, not F1) |
+| **System prompt** | ⭐ | Exact prompt format undisclosed |
+| **Tool definitions** | ⭐ | Tool count and schemas undisclosed |
+
+> The paper does **not report generative results (F1/FPR) for Qwen2.5-0.5B** — only probe AUC in Table 1. Our experiment reveals why: the 0.5B model cannot reliably generate `<functioncall>` tokens, making ASA steering ineffective at the behavioral level despite successful intent detection at the representation level.
 
 ## How ASA Works
 
@@ -190,20 +325,17 @@ graph LR
 
 ```
 Liquid-ASA/
-├── ASA_LFM25_Pipeline.ipynb    # 📓 Main notebook (Colab T4)
-├── create_notebook.py           # Generates the .ipynb
+├── ASA_LFM25_Pipeline.ipynb       # 📓 LFM2.5 main notebook (Colab T4)
+├── ASA_Qwen05B_Reproduction.ipynb # 📓 Qwen2.5-0.5B reproduction
+├── ASA_Qwen15B_Reproduction.ipynb # 📓 Qwen2.5-1.5B reproduction
+├── create_notebook.py              # Generates LFM2.5 notebook
+├── create_qwen05b_notebook.py      # Generates 0.5B notebook
+├── create_qwen15b_notebook.py      # Generates 1.5B notebook
 ├── data/
-│   └── tools.json               # 4 tool definitions (schema whitelist)
+│   └── tools.json                  # 4 tool definitions (schema whitelist)
 ├── outputs/
-│   ├── asa_assets/              # 🚀 Deployable assets (221KB)
-│   │   ├── config.json          #    L*=12, α=1, τ=0.5, β=0.0
-│   │   ├── steering_vectors.npz #    Domain + global vectors
-│   │   ├── router.pkl           #    Domain classifier
-│   │   ├── probes.pkl           #    Per-domain intent probes
-│   │   └── scaler.pkl           #    Hidden state normalizer
-│   ├── probe_sweep.png          # Layer AUC visualization
-│   ├── hp_sweep.png             # α/τ/β tuning plots
-│   └── baseline_vs_asa.png      # Comparison chart
+│   ├── asa_assets/                 # 🚀 LFM2.5 deployable assets (221KB)
+│   └── asa_assets_qwen05b/         # 🚀 Qwen2.5-0.5B assets
 ├── README.md
 ├── README_KR.md
 ├── requirements.txt
