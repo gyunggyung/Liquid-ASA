@@ -188,6 +188,8 @@ L* moving from GQA block (layer 12) to LIV block (layer 7) is a very interesting
 
 > **Conclusion**: Maxime's feedback was **effective at improving internal representations** (AUC↑, L\* shift). However, **the original goal of improving baseline FPR was not achieved**. This confirms that LFM2.5's high FPR is an **inherent model behavior characteristic**, not a prompt format issue. ASA remains the essential solution for reducing FPR regardless of prompt.
 
+> **τ/α Tuning** ([`ASA_LFM25_LiquidTuningTest.ipynb`](ASA_LFM25_LiquidTuningTest.ipynb)): Swept **16 configurations** including paper defaults (τ=0.60, α=4), sub-unit steering (α<1), promotion mode (τ=0.30), and minimal intervention (τ=0.90). **No configuration outperforms Qwen-style + ASA (F1=0.62)**. Best Liquid: F1=0.32 (τ=0.50, α=1). ASA actually degrades performance below baseline (F1=0.49), confirming **ASA should not be used with Liquid format**. Qwen-style + ASA remains the optimal combination for LFM2.5.
+
 ---
 
 ## Comparison with Paper Results
