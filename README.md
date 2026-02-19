@@ -86,10 +86,9 @@ ASA는 **모델 재학습 없이** 추론 시점에서 도구 호출 능력을 �
 
 ---
 
-## Liquid 공식 포맷 실험 (Maxime Labonne 피드백)
+## Liquid 공식 포맷 실험
 
-> 💡 [Maxime Labonne](https://huggingface.co/mlabonne) (Liquid AI, LFM 헤드)의 피드백:
-> *"maybe you could try changing the way you format the system prompt by adopting the standard format we highlight here: [docs.liquid.ai/tool-use](https://docs.liquid.ai/docs/key-concepts/tool-use)? That could help with FPR (the system prompt you're using looks mostly Qwen-optimized)"*
+> 💡 [Maxime Labonne](https://huggingface.co/mlabonne) (Liquid AI)의 피드백을 바탕으로, Qwen-style 시스템 프롬프트 대신 [Liquid 공식 Tool Use 포맷](https://docs.liquid.ai/docs/key-concepts/tool-use)을 적용하여 FPR 개선 가능성을 실험.
 
 노트북: [`ASA_LFM25_LiquidPrompt.ipynb`](ASA_LFM25_LiquidPrompt.ipynb)
 

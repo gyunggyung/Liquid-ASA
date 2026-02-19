@@ -84,10 +84,9 @@ Evaluated on a **1,600-sample benchmark** built from the [Alpaca](https://huggin
 
 ---
 
-## Liquid Official Format Experiment (Maxime Labonne Feedback)
+## Liquid Official Format Experiment
 
-> 💡 [Maxime Labonne](https://huggingface.co/mlabonne) (Liquid AI, LFM Lead) feedback:
-> *"maybe you could try changing the way you format the system prompt by adopting the standard format we highlight here: [docs.liquid.ai/tool-use](https://docs.liquid.ai/docs/key-concepts/tool-use)? That could help with FPR (the system prompt you're using looks mostly Qwen-optimized)"*
+> 💡 Based on feedback from [Maxime Labonne](https://huggingface.co/mlabonne) (Liquid AI), we tested the [official Liquid Tool Use format](https://docs.liquid.ai/docs/key-concepts/tool-use) instead of the Qwen-style system prompt to investigate potential FPR improvements.
 
 Notebook: [`ASA_LFM25_LiquidPrompt.ipynb`](ASA_LFM25_LiquidPrompt.ipynb)
 
