@@ -82,6 +82,115 @@ Evaluated on a **1,600-sample benchmark** built from the [Alpaca](https://huggin
   Baseline: TRIGGERED ❌      →  ASA: no trigger ✅ (p=0.021, gate=-1)
 ```
 
+---
+
+## Liquid Official Format Experiment (Maxime Labonne Feedback)
+
+> 💡 [Maxime Labonne](https://huggingface.co/mlabonne) (Liquid AI, LFM Lead) feedback:
+> *"maybe you could try changing the way you format the system prompt by adopting the standard format we highlight here: [docs.liquid.ai/tool-use](https://docs.liquid.ai/docs/key-concepts/tool-use)? That could help with FPR (the system prompt you're using looks mostly Qwen-optimized)"*
+
+Notebook: [`ASA_LFM25_LiquidPrompt.ipynb`](ASA_LFM25_LiquidPrompt.ipynb)
+
+### What Changed
+
+| Element | Old (Qwen-style) | New (Liquid Official) |
+|---------|-------------------|----------------------|
+| **System Prompt** | `"You are a helpful assistant with access to tools. When a user request requires using a tool, generate a tool call between <\|tool_call_start\|> and <\|tool_call_end\|> tokens. Available tools:\n" + json(indent=2)` | `"List of tools: " + json(compact)` |
+| **Prompt Length** | 1,670 chars | 1,032 chars (**-38%**) |
+| **Tool Call Instructions** | Explicit (`"generate a tool call between..."`) | ❌ None (model's own training) |
+| **JSON Format** | Pretty-print (indent=2) | Compact (single line) |
+
+**Hypothesis**: The Qwen-style explicit trigger instructions (`"generate a tool call between <|tool_call_start|> and <|tool_call_end|> tokens"`) may over-induce the model into "tool-calling mode", **causing high FPR**.
+
+### Results: Qwen-style vs Liquid Official
+
+#### Baseline (No ASA)
+
+| Metric | Qwen-style | Liquid Official | Change |
+|--------|-----------|-----------------|--------|
+| Precision | 0.4959 | 0.4927 | -0.6% |
+| **Recall** | 0.5656 | **0.6312** | **+11.6%** ↑ |
+| **F1** | 0.5285 | **0.5534** | **+4.7%** ↑ |
+| **FPR** | 0.5750 | **0.6500** | **+13.0%** ↑↑ |
+| Accuracy | 0.4953 | 0.4906 | -0.9% |
+
+#### With ASA
+
+| Metric | Qwen-style | Liquid Official | Change |
+|--------|-----------|-----------------|--------|
+| Precision | 0.7591 | 0.6476 | -14.7% ↓ |
+| Recall | 0.5219 | 0.2125 | -59.3% ↓↓ |
+| F1 | 0.6185 | 0.3200 | -48.3% ↓↓ |
+| **FPR** | 0.1656 | **0.1156** | **-30.2%** ↓ |
+| Accuracy | 0.6781 | 0.5484 | -19.1% ↓ |
+
+#### Pipeline Config Comparison
+
+| Parameter | Qwen-style | Liquid Official |
+|-----------|-----------|-----------------|
+| **Optimal Layer L\*** | **12** (GQA block) | **7** (LIV block) |
+| Probe AUC at L* | 0.8856 | **0.8964** ↑ |
+| α (steering strength) | 1.0 | 1.0 |
+| τ (confidence threshold) | 0.50 | 0.50 |
+| β (MoV global weight) | 0.0 | 0.0 |
+
+#### Ablation (Probe-level, TEST)
+
+| Variant | Qwen F1 | Liquid F1 | Qwen FPR | Liquid FPR |
+|---------|---------|-----------|----------|------------|
+| **Full ASA** | 0.8054 | **0.8092** | 0.2375 | **0.2094** |
+| No Gate | 0.6667 | 0.6667 | 1.0000 | 1.0000 |
+| Global Only | 0.8054 | 0.8092 | 0.2375 | 0.2094 |
+| Domain Only | 0.8054 | 0.8092 | 0.2375 | 0.2094 |
+
+### Analysis: Why These Results
+
+**1. The hypothesis was wrong — FPR actually increased (0.575 → 0.650)**
+
+Contrary to Maxime's feedback, switching to Liquid official format did not improve baseline FPR. It increased by +7.5%. This suggests **the high FPR is an inherent LFM2.5 model characteristic, not a prompt issue**.
+
+**2. But internal representations became cleaner**
+
+| Metric | Qwen-style | Liquid Official | Implication |
+|--------|-----------|-----------------|-------------|
+| Probe AUC | 0.8856 | **0.8964** | Tool intent detection +1.2% more accurate |
+| L* position | 12 (GQA) | **7 (LIV)** | Signal detected in earlier layers |
+| Ablation F1 | 0.8054 | **0.8092** | Probe-level classification improved |
+| Ablation FPR | 0.2375 | **0.2094** | Probe-level FPR improved |
+
+The model's "thinking" became cleaner, but it didn't translate to "behavior". This is exactly the **Representation-Behavior Gap** described in the ASA paper.
+
+**3. ASA's role changed**
+
+| Perspective | Qwen-style ASA | Liquid Official ASA |
+|-------------|----------------|---------------------|
+| FPR reduction | 0.575 → 0.166 (**-71%**) | 0.650 → 0.116 (**-82%**) |
+| Recall preservation | 0.566 → 0.522 (**-8%**) | 0.631 → 0.213 (**-66%**) |
+| **Tradeoff** | FPR↓ + Recall slight↓ | FPR↓↓ + Recall↓↓↓ |
+
+With Liquid format, ASA is **extremely effective at suppressing false positives** (FPR 0.116 is the lowest across all experiments), but it **also suppresses true positives**.
+
+**4. Significance of L\* shift (12→7)**
+
+L* moving from GQA block (layer 12) to LIV block (layer 7) is a very interesting finding:
+- With Qwen-style prompt, tool intent signals form in **later attention blocks**
+- With Liquid official format, they form in **early convolution blocks**
+- This suggests the shorter, cleaner prompt **changes early information processing**
+
+### Lessons
+
+| Finding | Implication |
+|---------|-------------|
+| **High FPR is a model characteristic** | LFM2.5's over-triggering is inherent model behavior, not a prompt issue |
+| **ASA remains essential** | ASA reduces FPR by -71~82% regardless of prompt format |
+| **Prompt affects internal representations** | Liquid format improves probe AUC and shifts L* |
+| **Representation-Behavior Gap is the core challenge** | The model "knows but can't act" — more fundamental than prompt |
+| **Success Precision = 0** | Both formats fail to generate valid JSON — model generation limitation |
+
+> **Conclusion**: Maxime's feedback was **effective at improving internal representations** (AUC↑, L\* shift). However, **the original goal of improving baseline FPR was not achieved**. This confirms that LFM2.5's high FPR is an **inherent model behavior characteristic**, not a prompt format issue. ASA remains the essential solution for reducing FPR regardless of prompt.
+
+---
+
 ## Comparison with Paper Results
 
 Full cross-model comparison using exact numbers from the [ASA paper](https://arxiv.org/abs/2602.04935) (Tables 1–5).
@@ -96,6 +205,7 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | **Qwen2.5-0.5B (ours)** | **0.5B** | **24** | **9** | **0.8734** | **0.5028** |
 | **Qwen2.5-1.5B (ours)** | **1.5B** | **28** | **12** | **0.8849** | **0.4974** |
 | **LFM2.5-1.2B (ours)** | **1.17B** | **16** | **12** | **0.8856** | — |
+| **LFM2.5-1.2B Liquid (ours)** | **1.17B** | **16** | **7** | **0.8964** | — |
 
 > Paper models achieve near-perfect AUC (~0.999) on their proprietary dataset. Our independent reproductions — Qwen2.5-0.5B (0.873), Qwen2.5-1.5B (0.885), and LFM2.5 (0.886) — all converge to **0.87–0.89** using the same Alpaca keyword-filtering pipeline. Even tripling model size (0.5B→1.5B) only improves AUC by +1.3%, confirming the gap is **data-driven, not model-driven**.
 
@@ -124,7 +234,7 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | Search | 0.37 | 0.30 | 1.00 | 0.11 |
 | Translation | 0.02 | 0.26 | 0.11 | 1.00 |
 
-> All four models show domain-specific geometry — directions are not random. Both Qwen models show Code nearly orthogonal to others, and Math↔Search sharing subspace. Qwen2.5-1.5B has more compact cross-domain cosines (max off-diagonal 0.41) vs 0.5B (max 0.40).
+> All four models show domain-specific geometry — directions are not random. Both Qwen models show Code nearly orthogonal to others, and Math↔Search sharing subspace.
 
 ### Main Results: All Models (Paper Tables 4–5)
 
@@ -143,7 +253,9 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | **Qwen2.5-1.5B** | Baseline | 0.7857 | 0.4125 | 0.5410 | 0.6500 | 0.1125 |
 | (ours) | **ASA α=1.0** | 0.7857 | 0.4125 | 0.5410 | 0.6500 | 0.1125 |
 | **LFM2.5-1.2B** | Baseline | 0.4959 | 0.5656 | 0.5285 | 0.4953 | 0.5750 |
-| (ours) | **ASA α=1.0** | **0.7591** | **0.5219** | **0.6185** | **0.6781** | **0.1656** |
+| (ours, Qwen-style) | **ASA α=1.0** | **0.7591** | **0.5219** | **0.6185** | **0.6781** | **0.1656** |
+| **LFM2.5-1.2B** | Baseline | 0.4927 | 0.6312 | 0.5534 | 0.4906 | 0.6500 |
+| (ours, Liquid) | **ASA α=1.0** | 0.6476 | 0.2125 | 0.3200 | 0.5484 | **0.1156** |
 
 ### Key Observations
 
@@ -155,24 +267,25 @@ Full cross-model comparison using exact numbers from the [ASA paper](https://arx
 | LLaMA-8B (paper) | Moderate (Recall=0.44) | Improves both P and R |
 | Qwen2.5-0.5B (ours) | **Under-triggers** (Recall=0.12) | Minimal effect (+7%) |
 | Qwen2.5-1.5B (ours) | **Already good** (F1=0.54) | **No effect (0%)** |
-| LFM2.5-1.2B (ours) | **Over-triggers** (FPR=0.58) | Suppresses false triggers ↓ |
+| LFM2.5-1.2B Qwen (ours) | **Over-triggers** (FPR=0.58) | Suppresses false triggers ↓ |
+| LFM2.5-1.2B Liquid (ours) | **Over-triggers** (FPR=0.65) | Lowest FPR (0.116), Recall↓↓ |
 
 > Our Qwen2.5-1.5B baseline (F1=0.54) **already outperforms the paper's ASA result** (F1=0.50). This means our prompt/data setup already elicits good tool-calling, leaving no room for ASA improvement. The paper's dramatic +177% gain comes from an extremely weak baseline (Recall=0.11) that we cannot reproduce.
 
 **2. Relative improvements:**
 
-| Improvement | Qwen2.5-1.5B (paper) | LLaMA-8B (paper) | Qwen2.5-0.5B (ours) | Qwen2.5-1.5B (ours) | LFM2.5-1.2B (ours) |
+| Improvement | Qwen2.5-1.5B (paper) | LLaMA-8B (paper) | Qwen2.5-0.5B (ours) | Qwen2.5-1.5B (ours) | LFM2.5 Qwen (ours) | LFM2.5 Liquid (ours) |
 |-------------|-------------|----------|-------------|-------------|------------|
-| ΔF1 (relative) | +177% | +39% | **+7%** | **0%** | **+17%** |
-| ΔFPR (relative) | -64% | -17% | **-7%** | **0%** | **-71%** |
-| ΔPrecision | +98% | +8% | **+6%** | **0%** | **+53%** |
+| ΔF1 (relative) | +177% | +39% | **+7%** | **0%** | **+17%** | **-39%** |
+| ΔFPR (relative) | -64% | -17% | **-7%** | **0%** | **-71%** | **-82%** |
+| ΔPrecision | +98% | +8% | **+6%** | **0%** | **+53%** | +31% |
 
 > ASA's effectiveness is **inversely proportional to baseline quality**: dramatic gains require a weak baseline. When the model already handles tools well, steering adds nothing.
 
 **3. Post-trigger validity:**
 
 | Model | JSON Valid | Schema OK | Args OK |
-|-------|-----------|-----------|---------|
+|-------|-----------|-----------|---------| 
 | Qwen2.5-1.5B ASA (paper) | 0.8800 | 0.6923 | 0.8700 |
 | Qwen2.5-0.5B ASA (ours) | 0.0441 | 0.0147 | 0.0441 |
 | Qwen2.5-1.5B ASA (ours) | **0.3333** | **0.3214** | **0.0655** |
@@ -468,6 +581,8 @@ graph LR
 ```
 Liquid-ASA/
 ├── ASA_LFM25_Pipeline.ipynb       # 📓 LFM2.5 main notebook (Colab T4)
+├── ASA_LFM25_LiquidPrompt.ipynb   # 📓 Liquid official format experiment (Maxime feedback)
+├── ASA_LFM25_LiquidTuning.ipynb   # 📓 τ/α tuning experiment (self-contained)
 ├── ASA_Qwen05B_Reproduction.ipynb # 📓 Qwen2.5-0.5B reproduction
 ├── ASA_Qwen15B_Reproduction.ipynb # 📓 Qwen2.5-1.5B reproduction
 ├── create_notebook.py              # Generates LFM2.5 notebook
@@ -478,8 +593,9 @@ Liquid-ASA/
 ├── outputs/
 │   ├── asa_assets/                 # 🚀 LFM2.5 deployable assets (221KB)
 │   └── asa_assets_qwen05b/         # 🚀 Qwen2.5-0.5B assets
-├── README.md
-├── README_KR.md
+├── RESULTS_SUMMARY.md              # Comprehensive results analysis
+├── README.md                       # 🇰🇷 Korean README
+├── README_EN.md                    # 🇺🇸 English README
 ├── requirements.txt
 └── LICENSE
 ```
